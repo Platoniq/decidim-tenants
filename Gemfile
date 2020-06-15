@@ -38,7 +38,7 @@ group :development do
 end
 
 group :production do
-	gem "passenger", "~> 6.0",
+	gem "passenger", "~> 6.0"
 	gem "delayed_job_active_record", "~> 4.1"
 	gem "daemons", "~> 1.3"
 end

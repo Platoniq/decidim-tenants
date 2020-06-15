@@ -35,3 +35,8 @@ public/uploads
 
 # Do not track secrets in GIT
 /config/application.yml
+
+# Ignore deploy secrets
+/config/deploy.rb
+/config/deploy/*
+/Capfile
