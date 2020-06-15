@@ -4,6 +4,20 @@ Free Open-Source participatory democracy, citizen participation and open governm
 
 This is the open-source repository for initial, based on [Decidim](https://github.com/decidim/decidim).
 
+## Deploying the app
+
+The app is deployed with [Capistrano](http://capistranorb.com/) using [Figaro](https://github.com/laserlemon/figaro) for `ENV` configuration. In order to deploy it, these are the required steps:
+
+1. Make sure you have Ruby installed with the correct version. Version is specified in the `.ruby-version` file in this repo. In order to test the Ruby version, use `ruby -v`. Using a version manager is recommended, please check RVM or RBenv for Ruby-specific managers, or asdf for a more general version manager.
+1. Ensure you have all dependencies installed. Run `bundle install`. If it gives you an error saying Bundler is missing, install it first with `gem install bundler` and then run `bundle install`.
+1. Ensure you have the required files to deploy the app. They are not included in this repo because they include sensitive data, so you'll need to ask around. Needed files are:
+
+   1. `Capfile`
+   1. `config/deploy.rb`
+   1. `config/deploy/production.rb`
+
+1. Deploy the app with `bundle exec cap production deploy`
+
 ## Setting up the application
 
 You will need to do some steps before having the app working properly once you've deployed it:
