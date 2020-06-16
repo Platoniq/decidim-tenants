@@ -6,7 +6,7 @@ ruby RUBY_VERSION
 
 gem "decidim", "0.21.0"
 # gem "decidim-consultations", "0.21.0"
-# gem "decidim-initiatives", "0.21.0"
+gem "decidim-initiatives", "0.21.0"
 
 gem "bootsnap", "~> 1.4"
 
@@ -16,6 +16,7 @@ gem "uglifier", "~> 4.1"
 gem "faker", "~> 1.9"
 gem "figaro", "~> 1.2"
 gem "whenever", require: false
+gem "wicked_pdf"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
