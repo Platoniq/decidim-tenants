@@ -6,10 +6,11 @@ ruby RUBY_VERSION
 
 gem "decidim", "0.21.0"
 # gem "decidim-consultations", "0.21.0"
-gem "decidim-initiatives", "0.21.0"
-gem 'decidim-assemblies'
-gem 'decidim-consultations'
+gem "decidim-assemblies"
+gem "decidim-conferences"
+gem "decidim-consultations"
 gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome"
+gem "decidim-initiatives", "0.21.0"
 
 gem "bootsnap", "~> 1.4"
 
@@ -34,17 +35,15 @@ group :development do
   gem "web-console", "~> 3.5"
 
   gem "capistrano", "~> 3.14"
-  gem "capistrano-rbenv", "~> 2.1"
   gem "capistrano-bundler", "~> 1.6"
   gem "capistrano-passenger", "~> 0.2.0"
   gem "capistrano-rails", "~> 1.5"
+  gem "capistrano-rbenv", "~> 2.1"
 end
 
 group :production do
+  gem "daemons", "~> 1.3"
+  gem "delayed_job_active_record", "~> 4.1"
   gem "figaro", "~> 1.2"
   gem "passenger", "~> 6.0"
-  gem "delayed_job_active_record", "~> 4.1"
-  gem "daemons", "~> 1.3"
 end
-
-
