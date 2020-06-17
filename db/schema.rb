@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_17_155948) do
+ActiveRecord::Schema.define(version: 2020_06_17_160548) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1588,6 +1588,62 @@ ActiveRecord::Schema.define(version: 2020_06_17_155948) do
     t.index ["translation_set_id"], name: "decidim_term_customizer_translation_translation_set"
   end
 
+  create_table "decidim_time_tracker_activities", force: :cascade do |t|
+    t.bigint "task_id", null: false
+    t.jsonb "description"
+    t.boolean "active"
+    t.date "start_date"
+    t.date "end_date"
+    t.integer "max_minutes_per_day"
+    t.datetime "requests_start_at"
+    t.index ["task_id"], name: "index_decidim_time_tracker_activities_on_task_id"
+  end
+
+  create_table "decidim_time_tracker_assignees", force: :cascade do |t|
+    t.bigint "decidim_user_id", null: false
+    t.bigint "activity_id", null: false
+    t.string "status"
+    t.datetime "invited_at"
+    t.bigint "invited_by_user_id"
+    t.datetime "requested_at"
+    t.datetime "tos_accepted_at"
+    t.index ["activity_id"], name: "index_decidim_time_tracker_assignees_on_activity_id"
+    t.index ["decidim_user_id"], name: "index_decidim_time_tracker_assignees_on_decidim_user_id"
+    t.index ["invited_by_user_id"], name: "index_decidim_time_tracker_assignees_on_invited_by_user_id"
+  end
+
+  create_table "decidim_time_tracker_milestones", force: :cascade do |t|
+    t.bigint "decidim_user_id", null: false
+    t.jsonb "title"
+    t.jsonb "description"
+    t.bigint "decidim_component_id"
+    t.index ["decidim_component_id"], name: "index_decidim_time_tracker_milestones_on_decidim_component_id"
+    t.index ["decidim_user_id"], name: "index_decidim_time_tracker_milestones_on_decidim_user_id"
+  end
+
+  create_table "decidim_time_tracker_tasks", force: :cascade do |t|
+    t.jsonb "name"
+    t.bigint "decidim_component_id"
+    t.index ["decidim_component_id"], name: "index_decidim_time_tracker_tasks_on_decidim_component_id"
+  end
+
+  create_table "decidim_time_tracker_time_entries", force: :cascade do |t|
+    t.bigint "assignee_id"
+    t.bigint "activity_id"
+    t.bigint "milestone_id"
+    t.datetime "time_start"
+    t.datetime "time_end"
+    t.datetime "validated_at"
+    t.bigint "validated_by_user_id"
+    t.datetime "elapsed_time"
+    t.datetime "time_pause"
+    t.datetime "time_resume"
+    t.index ["activity_id"], name: "index_decidim_time_tracker_time_entries_on_activity_id"
+    t.index ["assignee_id"], name: "index_decidim_time_tracker_time_entries_on_assignee_id"
+    t.index ["milestone_id"], name: "index_decidim_time_tracker_time_entries_on_milestone_id"
+    t.index ["validated_by_user_id"], name: "index_decidim_time_tracker_time_entries_on_validated_by_user_id"
+  end
+
   create_table "decidim_user_group_memberships", id: :serial, force: :cascade do |t|
     t.integer "decidim_user_id", null: false
     t.integer "decidim_user_group_id", null: false
@@ -1778,6 +1834,13 @@ ActiveRecord::Schema.define(version: 2020_06_17_155948) do
   add_foreign_key "decidim_term_customizer_constraints", "decidim_organizations"
   add_foreign_key "decidim_term_customizer_constraints", "decidim_term_customizer_translation_sets", column: "translation_set_id"
   add_foreign_key "decidim_term_customizer_translations", "decidim_term_customizer_translation_sets", column: "translation_set_id"
+  add_foreign_key "decidim_time_tracker_activities", "decidim_time_tracker_tasks", column: "task_id"
+  add_foreign_key "decidim_time_tracker_assignees", "decidim_time_tracker_activities", column: "activity_id"
+  add_foreign_key "decidim_time_tracker_assignees", "decidim_users", column: "invited_by_user_id"
+  add_foreign_key "decidim_time_tracker_time_entries", "decidim_time_tracker_activities", column: "activity_id"
+  add_foreign_key "decidim_time_tracker_time_entries", "decidim_time_tracker_assignees", column: "assignee_id"
+  add_foreign_key "decidim_time_tracker_time_entries", "decidim_time_tracker_milestones", column: "milestone_id"
+  add_foreign_key "decidim_time_tracker_time_entries", "decidim_users", column: "validated_by_user_id"
   add_foreign_key "decidim_users", "decidim_organizations"
   add_foreign_key "decidim_verifications_csv_data", "decidim_organizations"
   add_foreign_key "oauth_access_grants", "decidim_users", column: "resource_owner_id"
