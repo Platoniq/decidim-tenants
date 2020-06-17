@@ -15,6 +15,14 @@ GIT
       decidim-admin (>= 0.18.0)
       decidim-core (>= 0.18.0)
 
+GIT
+  remote: https://github.com/Platoniq/decidim-module-term_customizer
+  revision: f47dd176883e3f7c93cfc17b35632a14278934d7
+  specs:
+    decidim-term_customizer (0.21.0)
+      decidim-admin (~> 0.21.0)
+      decidim-core (~> 0.21.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -841,6 +849,7 @@ DEPENDENCIES
   decidim-dev (= 0.21.0)
   decidim-initiatives (= 0.21.0)
   decidim-navigation_maps!
+  decidim-term_customizer!
   delayed_job_active_record (~> 4.1)
   faker (~> 1.9)
   figaro (~> 1.2)
