@@ -7,6 +7,14 @@ GIT
       decidim-core (>= 0.20.0)
       redcarpet (~> 3.4)
 
+GIT
+  remote: https://github.com/Platoniq/decidim-module-navigation_maps
+  revision: 4800178303d77c29259b9d81829d91672ddfd1be
+  specs:
+    decidim-navigation_maps (1.0)
+      decidim-admin (>= 0.18.0)
+      decidim-core (>= 0.18.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -832,6 +840,7 @@ DEPENDENCIES
   decidim-decidim_awesome!
   decidim-dev (= 0.21.0)
   decidim-initiatives (= 0.21.0)
+  decidim-navigation_maps!
   delayed_job_active_record (~> 4.1)
   faker (~> 1.9)
   figaro (~> 1.2)

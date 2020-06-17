@@ -11,6 +11,7 @@ gem "decidim-conferences"
 gem "decidim-consultations"
 gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome"
 gem "decidim-initiatives", "0.21.0"
+gem "decidim-navigation_maps", git: "https://github.com/Platoniq/decidim-module-navigation_maps"
 
 gem "bootsnap", "~> 1.4"
 
