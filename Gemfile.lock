@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/Platoniq/decidim-module-decidim_awesome
+  revision: c5d778ca2eef05f2609c6978b196cb363331d5f7
+  specs:
+    decidim-decidim_awesome (0.2)
+      decidim-admin (>= 0.20.0)
+      decidim-core (>= 0.20.0)
+      redcarpet (~> 3.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -808,6 +817,8 @@ DEPENDENCIES
   capistrano-rbenv (~> 2.1)
   daemons (~> 1.3)
   decidim (= 0.21.0)
+  decidim-assemblies
+  decidim-decidim_awesome!
   decidim-dev (= 0.21.0)
   decidim-initiatives (= 0.21.0)
   delayed_job_active_record (~> 4.1)
