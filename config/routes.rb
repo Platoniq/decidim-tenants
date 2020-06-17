@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  authenticated :user, -> user { user.admin? }  do
+    mount DelayedJobWeb, at: "/delayed_job"
+  end
+
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
