@@ -13,7 +13,7 @@ gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-
 gem "decidim-initiatives", "0.21.0"
 gem "decidim-navigation_maps", git: "https://github.com/Platoniq/decidim-module-navigation_maps"
 gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer"
-gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker"
+gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker", branch: "feature/accountability_autoconfiguration"
 
 gem "bootsnap", "~> 1.4"
 
