@@ -14,9 +14,9 @@ gem "decidim-conferences", DECIDIM_VERSION
 # #gem "decidim-initiatives", DECIDIM_VERSION
 gem "decidim-navigation_maps", git: "https://github.com/Platoniq/decidim-module-navigation_maps"
 gem "decidim-term_customizer", { git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.22" }
-gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker"
 gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify"
 gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome"
+gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker", branch: "feature/accountability_autoconfiguration"
 
 gem "bootsnap", "~> 1.4"
 
