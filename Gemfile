@@ -4,31 +4,33 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", "0.21.0"
-# gem "decidim-consultations", "0.21.0"
-gem "decidim-assemblies"
-gem "decidim-conferences"
-gem "decidim-consultations"
-gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome"
-gem "decidim-initiatives", "0.21.0"
+# DECIDIM_VERSION="0.21.0"
+DECIDIM_VERSION = { git: "https://github.com/decidim/decidim", tag: "release/0.22-stable" }
+
+
+gem "decidim", DECIDIM_VERSION
+gem "decidim-consultations", DECIDIM_VERSION
+gem "decidim-conferences", DECIDIM_VERSION
+# #gem "decidim-initiatives", DECIDIM_VERSION
 gem "decidim-navigation_maps", git: "https://github.com/Platoniq/decidim-module-navigation_maps"
-gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer"
+gem "decidim-term_customizer", { git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.22" }
 gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker"
+gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify"
+gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome"
 
 gem "bootsnap", "~> 1.4"
 
-gem "puma", "~> 4.3.3"
+gem "puma", ">= 4.3"
 gem "uglifier", "~> 4.1"
 
 gem "faker", "~> 1.9"
 gem "whenever", require: false
-gem "wicked_pdf"
 gem "delayed_job_web"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
-  gem "decidim-dev", "0.21.0"
+  gem "decidim-dev", DECIDIM_VERSION
 end
 
 group :development do
