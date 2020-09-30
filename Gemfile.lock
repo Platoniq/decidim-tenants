@@ -1,13 +1,4 @@
 GIT
-  remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: 78dd8cff16735775535ac18bfb63e4f2ffd8ffe6
-  specs:
-    decidim-decidim_awesome (0.3)
-      decidim-admin (>= 0.20.0)
-      decidim-core (>= 0.20.0)
-      redcarpet (~> 3.4)
-
-GIT
   remote: https://github.com/Platoniq/decidim-module-navigation_maps
   revision: 4800178303d77c29259b9d81829d91672ddfd1be
   specs:
@@ -42,7 +33,7 @@ GIT
 
 GIT
   remote: https://github.com/decidim/decidim
-  revision: 640064aa9bbfe1564c1fc1a02830cae8970408b2
+  revision: e3223d8eaea83b2dfdd585ac2da230369b2f6bfc
   tag: release/0.22-stable
   specs:
     decidim (0.22.0)
@@ -248,6 +239,14 @@ GIT
     decidim-verifications (0.22.0)
       decidim-core (= 0.22.0)
 
+PATH
+  remote: ../decidim-module-decidim_awesome
+  specs:
+    decidim-decidim_awesome (0.4)
+      decidim-admin (>= 0.21.0)
+      decidim-core (>= 0.21.0)
+      redcarpet (~> 3.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -396,6 +395,11 @@ GEM
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
     declarative-option (0.1.0)
+    deface (1.5.3)
+      nokogiri (>= 1.6)
+      polyglot
+      rails (>= 4.1)
+      rainbow (>= 2.1.0)
     delayed_job (4.1.8)
       activesupport (>= 3.0, < 6.1)
     delayed_job_active_record (4.1.4)
@@ -475,7 +479,7 @@ GEM
     graphiql-rails (1.4.11)
       railties
       sprockets-rails
-    graphql (1.11.4)
+    graphql (1.11.5)
     hashdiff (1.0.1)
     hashie (4.1.0)
     highline (2.0.3)
@@ -624,6 +628,7 @@ GEM
     pg_search (2.3.3)
       activerecord (>= 5.2)
       activesupport (>= 5.2)
+    polyglot (0.3.5)
     premailer (1.14.2)
       addressable
       css_parser (>= 1.6.0)
@@ -877,6 +882,7 @@ DEPENDENCIES
   decidim-notify!
   decidim-term_customizer!
   decidim-time_tracker!
+  deface
   delayed_job_active_record (~> 4.1)
   delayed_job_web
   faker (~> 1.9)

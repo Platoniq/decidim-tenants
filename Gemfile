@@ -11,12 +11,14 @@ DECIDIM_VERSION = { git: "https://github.com/decidim/decidim", tag: "release/0.2
 gem "decidim", DECIDIM_VERSION
 gem "decidim-consultations", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
-# #gem "decidim-initiatives", DECIDIM_VERSION
+#gem "decidim-initiatives", DECIDIM_VERSION
 gem "decidim-navigation_maps", git: "https://github.com/Platoniq/decidim-module-navigation_maps"
-gem "decidim-term_customizer", { git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.22" }
+gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.22"
 gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify"
-gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome"
 gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker", branch: "feature/accountability_autoconfiguration"
+# gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome", branch: "compat-0.22"
+gem "decidim-decidim_awesome", path: "../decidim-module-decidim_awesome"
+gem "deface"
 
 gem "bootsnap", "~> 1.4"
 
