@@ -1,0 +1,12 @@
+@import "decidim/variables";
+@import "variables";
+
+:root {
+  --primary: #{$strato-red};
+  --primary-rgb: #{$strato-red-rgb};
+  // --secondary: #{$anchor-color};
+  // --secondary-rgb: #{$strato-lilac-rgb};
+  // --alert: #{$strato-red};
+  // --warning: #{$strato-yellow};
+  // --success: #{$strato-green};
+}

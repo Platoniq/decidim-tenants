@@ -1,0 +1,141 @@
+@import "foundation";
+@import "decidim/variables";
+@import "decidim/utils/settings";
+@import "../variables";
+@import "../mixins";
+
+.title-bar {
+	background-color: $title-bar-color;
+	@include breakpoint(medium up){
+	  .topbar__dropmenu > ul > li > a::after {
+	      border-top-color: $strato-light !important;
+	  }
+	}
+}
+// Hide locales if only 1 language
+.num_locales-1 {
+  .title-bar {
+    @include breakpoint(smallmedium down){
+      border-top-width: 1px;
+      @include strato-border($navbar-color);
+    }
+  }
+}
+.navbar {
+	@include breakpoint(medium up){
+		@include strato-border($title-bar-color);
+	}
+	background-color: $navbar-color;
+}
+
+.main-nav__link {
+  a {
+		box-shadow: none;
+		padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    margin-top: 9px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+	  &:hover{
+	    color: #fff;
+	  }
+	}
+	&--active a, &--active a:hover, &--active a:focus {
+		box-shadow: none;
+		@include noise-background;
+	}
+}
+.hide-for-medium{
+  .topbar__user__login{
+    a{
+      color: $medium-gray;
+
+      &:hover{
+        color: $anchor-color;
+      }
+    }
+  }
+}
+.dropdown.menu .is-active > a{
+  color: $navbar-color;
+}
+
+.topbar_{
+  &_notifications, &_conversations {
+    .icon {
+      fill: #000;
+    }
+    &.is-active .icon {
+      fill: $alert;
+      opacity: 0.9;
+    }
+  }
+
+  &_menu{
+    .icon--menu{
+      fill: $navbar-color;
+    }
+  }
+
+  &_admin__link a {
+    color: $alert;
+    &:hover {
+      color: $navbar-color;
+    }
+  }
+
+  &_edit__link a{
+    color: $navbar-color;
+
+    &:hover{
+      color: $navbar-color;
+    }
+  }
+
+  &_user__login{
+    a{
+      color: $strato-light;
+      font-weight: 400;
+      &:hover {
+      	// color: darken($navbar-color, 10%);
+      }
+    }
+	}
+	&_search {
+    &:not(:focus-within) button {
+      background-color:#fafafa;
+    }
+    svg {
+  		color: #999;
+  	}
+  }
+  &_dropmenu{
+    > ul > li > a{
+      color: $strato-light;
+    }
+
+    .is-dropdown-submenu-parent{
+      > a,
+      &.is-active > a{
+        @include breakpoint(smallmedium down){
+          color: white;
+        }
+      }
+    }
+
+    .is-dropdown-submenu li a{
+      color: $strato-light;
+    }
+  }
+
+}
+@media print, screen and (min-width: 40em) {
+  .topbar__search input,
+  .topbar__search input:focus {
+		color: #777;
+    background: $body-background-color;
+  }
+  .topbar__search input::placeholder {
+  	color: #999;
+  }
+}

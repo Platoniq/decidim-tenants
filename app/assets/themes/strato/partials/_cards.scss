@@ -1,0 +1,42 @@
+@import "foundation";
+@import "../variables";
+
+.card__link {
+  color: $strato-black;
+
+  &:hover {
+    color: $anchor-color;
+  }
+}
+
+.card--widget .card-data {
+  flex-wrap: wrap-reverse;
+  .card-data__item {
+    &:first-child {
+      flex-basis: 100%;
+      border-right: 0;
+      > div {
+        flex-direction: row;
+        top: 50%;
+        left: 1em;
+        transform: translate(0, -50%);
+        > svg {
+          margin-right: 0.5em;
+          @include breakpoint(smallmedium down){
+            height: 1.2em;
+            width: 1.2em;
+          }
+        }
+        > .mt-xs {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+.collapsible-list .collapsible-list__see-more {
+  color: var(--secondary);
+}
+.card--list__icon {
+  fill: var(--secondary);
+}

@@ -1,0 +1,35 @@
+@import "foundation";
+@import "../variables";
+@import "../mixins";
+
+.wrapper-home {
+  padding: 2rem 1rem;
+}
+
+.hero::after {
+	background-color: rgba(26, 24, 29, 0.1);;
+	@include noise-background;
+}
+
+.home-section {
+	&.hero, &.highligted-content-banner {
+		&:not(:first-child) {
+		  @include strato-border($body-background-color);
+		  &::after {
+		  	z-index: 0;
+
+		  }
+		}
+	  >.hero__container, >.highligted-content-banner__container {
+		  @include strato-border($body-background-color, "down");
+	  }
+	}
+	@include breakpoint(medium up){
+		&:first-child {
+			&.hero, &.highligted-content-banner {
+			  @include strato-border($navbar-color);
+		  }
+		}
+	}
+}
+

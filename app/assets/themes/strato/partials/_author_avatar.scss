@@ -1,0 +1,18 @@
+@import "../variables";
+
+.author-data {
+  a,
+  button {
+    &:hover {
+      color: $anchor-color;
+    }
+  }
+  .author__name {
+    color: $anchor-color;
+  }
+}
+
+
+.author__verified, .author__badge svg {
+    color: $alert;
+}

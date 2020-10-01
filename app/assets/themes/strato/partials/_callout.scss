@@ -1,0 +1,14 @@
+.callout.flash {
+  margin-bottom: 0;
+  border-style: solid;
+  border-width: 5px;
+  &.success {
+    border-color: var(--success);
+  }
+  &.alert {
+    border-color: var(--alert);
+  }
+  &.warning {
+    border-color: var(--warning);
+  }
+}
