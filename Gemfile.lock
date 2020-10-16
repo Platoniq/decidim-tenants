@@ -1,6 +1,7 @@
 GIT
   remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: b75572821fe5683740ef9f7e5d7d006134d860a2
+  revision: 1d323f3c4623d9bce236d3f1407711fe679e46af
+  branch: iframe-component
   specs:
     decidim-decidim_awesome (0.4)
       decidim-admin (>= 0.21.0)
