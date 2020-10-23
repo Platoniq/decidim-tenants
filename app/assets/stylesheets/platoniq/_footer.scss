@@ -1,0 +1,35 @@
+.mini-footer{
+  .column:not(.logos){
+    padding-bottom: 1rem;
+
+    @media only screen and (min-width: 639px){
+      padding-top: 0.2rem;
+    }
+  }
+
+  .logos{
+    display: flex;
+    height: 2rem;
+    margin-top: 1.5rem;
+
+    .decidim-logo,
+    .platoniq-logo{
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      a{
+        text-decoration: none;
+      }
+    }
+
+    @media only screen and (min-width: 639px){
+      align-items: flex-end;
+      margin-top: 0;
+      .decidim-logo,
+      .platoniq-logo{
+        margin-right: 0;
+      }
+    }
+  }
+} 
