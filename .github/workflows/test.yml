@@ -36,6 +36,9 @@ jobs:
           # disable cache for a while something is corrupted
           # bundler-cache: true
 
+      - run: bundle install
+        name: Bundle
+
       - run: bundle exec rubocop -P
         name: Lint Ruby files
 
