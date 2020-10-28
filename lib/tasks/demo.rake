@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # lib/tasks/rebuild_metrics.rake
 namespace :demo do
   desc "Ensures locales in organizations are in sync with Decidim configuration"
@@ -6,9 +8,7 @@ namespace :demo do
       organization.available_locales = Decidim.available_locales.filter do |lang|
         organization.available_locales.include?(lang.to_s)
       end
-      unless organization.available_locales.include? organization.default_locale
-        organization.default_locale = organization.available_locales.first
-      end
+      organization.default_locale = organization.available_locales.first unless organization.available_locales.include? organization.default_locale
       organization.save!
     end
   end
@@ -35,7 +35,7 @@ namespace :demo do
       "accepted_proposals" => Decidim::Proposals::Metrics::AcceptedProposalsMetricManage,
       "votes" => Decidim::Proposals::Metrics::VotesMetricManage,
       "endorsements" => Decidim::Proposals::Metrics::EndorsementsMetricManage,
-      "survey_answers" =>  Decidim::Surveys::Metrics::AnswersMetricManage,
+      "survey_answers" => Decidim::Surveys::Metrics::AnswersMetricManage,
       "results" => Decidim::Accountability::Metrics::ResultsMetricManage,
       "debates" => Decidim::Debates::Metrics::DebatesMetricManage
     }
@@ -55,28 +55,25 @@ namespace :demo do
 
   desc "Test email server"
   task :mail_test, [:email] => :environment do |_task, args|
-    begin
-      raise ArgumentError if args.email.blank?
+    raise ArgumentError if args.email.blank?
 
-      puts "Sending a test email to #{args.email}"
+    puts "Sending a test email to #{args.email}"
 
-      if ENV["SMTP_SETTINGS"].present?
-        settings = eval ENV["SMTP_SETTINGS"]
-        ActionMailer::Base.smtp_settings = settings
-        puts "Using custom settings!"
-      end
-      puts "Using configuration:"
-      puts ActionMailer::Base.smtp_settings
+    # if ENV["SMTP_SETTINGS"].present?
+    #   settings = eval ENV["SMTP_SETTINGS"]
+    #   ActionMailer::Base.smtp_settings = settings
+    #   puts "Using custom settings!"
+    # end
+    puts "Using configuration:"
+    puts ActionMailer::Base.smtp_settings
 
-      mail=ActionMailer::Base.mail(to: args.email,
-                              from: Decidim.mailer_sender,
-                              subject: "A test mail from #{Decidim.application_name}",
-                              body: "Sent by #{ENV['LOGNAME']} in #{ENV['HOME']} at #{Date.current}")
-      mail.deliver_now
-
-    rescue ArgumentError
-      puts mail_usage
-    end
+    mail = ActionMailer::Base.mail(to: args.email,
+                                   from: Decidim.mailer_sender,
+                                   subject: "A test mail from #{Decidim.application_name}",
+                                   body: "Sent by #{ENV["LOGNAME"]} in #{ENV["HOME"]} at #{Date.current}")
+    mail.deliver_now
+  rescue ArgumentError
+    puts mail_usage
   end
 
   def mail_usage

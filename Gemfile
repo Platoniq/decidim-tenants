@@ -5,18 +5,17 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 # DECIDIM_VERSION="0.21.0"
-DECIDIM_VERSION = { git: "https://github.com/decidim/decidim", tag: "release/0.22-stable" }
-
+DECIDIM_VERSION = { git: "https://github.com/decidim/decidim", tag: "release/0.22-stable" }.freeze
 
 gem "decidim", DECIDIM_VERSION
-gem "decidim-consultations", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
+gem "decidim-consultations", DECIDIM_VERSION
 # gem "decidim-initiatives", DECIDIM_VERSION
-gem "decidim-navigation_maps", git: "https://github.com/Platoniq/decidim-module-navigation_maps"
-gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.22"
-gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify"
-gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker", branch: "feature/accountability_autoconfiguration"
 gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome", branch: "iframe-component"
+gem "decidim-navigation_maps", git: "https://github.com/Platoniq/decidim-module-navigation_maps"
+gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify"
+gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.22"
+gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker", branch: "feature/accountability_autoconfiguration"
 
 # gem "deface"
 
@@ -25,9 +24,9 @@ gem "bootsnap", "~> 1.4"
 gem "puma", ">= 4.3"
 gem "uglifier", "~> 4.1"
 
+gem "delayed_job_web"
 gem "faker", "~> 1.9"
 gem "whenever", require: false
-gem "delayed_job_web"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
