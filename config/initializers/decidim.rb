@@ -123,7 +123,6 @@ Decidim.configure do |config|
   }
 
   config.force_ssl = false
-
 end
 
 Rails.application.config.i18n.available_locales = Decidim.available_locales

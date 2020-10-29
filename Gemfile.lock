@@ -1,7 +1,6 @@
 GIT
   remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: 1d323f3c4623d9bce236d3f1407711fe679e46af
-  branch: iframe-component
+  revision: e55440aaa01d6b7b2f56942d9c9bd45e1aa32100
   specs:
     decidim-decidim_awesome (0.4)
       decidim-admin (>= 0.21.0)
@@ -10,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/Platoniq/decidim-module-navigation_maps
-  revision: 4800178303d77c29259b9d81829d91672ddfd1be
+  revision: d816e695300a9ccc9e424a8986cd51ad256fa722
   specs:
     decidim-navigation_maps (1.0)
       decidim-admin (>= 0.18.0)
@@ -43,7 +42,7 @@ GIT
 
 GIT
   remote: https://github.com/decidim/decidim
-  revision: e3223d8eaea83b2dfdd585ac2da230369b2f6bfc
+  revision: ab0699464a08b957edda78d94274e60be7c2e5b7
   tag: release/0.22-stable
   specs:
     decidim (0.22.0)
@@ -326,7 +325,7 @@ GEM
       parser (>= 2.4)
       smart_properties
     bindex (0.8.1)
-    bootsnap (1.4.8)
+    bootsnap (1.4.9)
       msgpack (~> 1.0)
     browser (2.7.1)
     builder (3.2.4)
@@ -370,7 +369,7 @@ GEM
       actionpack (>= 3.0)
       cells (>= 4.1.6, < 5.0.0)
     charlock_holmes (0.7.7)
-    chef-utils (16.5.77)
+    chef-utils (16.6.14)
     childprocess (3.0.0)
     chronic (0.10.2)
     coercible (1.0.0)
@@ -452,8 +451,9 @@ GEM
       railties (>= 3.0.0)
     faker (1.9.6)
       i18n (>= 0.7)
-    faraday (1.0.1)
+    faraday (1.1.0)
       multipart-post (>= 1.2, < 3)
+      ruby2_keywords
     ffi (1.13.1)
     figaro (1.2.0)
       thor (>= 0.14.0, < 2)
@@ -470,7 +470,7 @@ GEM
       activesupport (>= 4.1, < 6.0)
       railties (>= 4.1, < 6.0)
       tzinfo (~> 1.2, >= 1.2.2)
-    geocoder (1.6.3)
+    geocoder (1.6.4)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     graphiql-rails (1.4.11)
@@ -616,13 +616,13 @@ GEM
       activerecord (>= 4.2)
       request_store (~> 1.1)
     parallel (1.19.2)
-    parser (2.7.1.5)
+    parser (2.7.2.0)
       ast (~> 2.4.1)
     passenger (6.0.6)
       rack
       rake (>= 0.8.1)
     pg (1.1.4)
-    pg_search (2.3.3)
+    pg_search (2.3.4)
       activerecord (>= 5.2)
       activesupport (>= 5.2)
     premailer (1.14.2)
@@ -633,7 +633,7 @@ GEM
       actionmailer (>= 3)
       premailer (~> 1.7, >= 1.7.9)
     public_suffix (4.0.6)
-    puma (5.0.2)
+    puma (5.0.4)
       nio4r (~> 2.0)
     rack (2.2.3)
     rack-attack (6.3.1)
@@ -693,7 +693,7 @@ GEM
       wisper (>= 1.6.1)
     redcarpet (3.5.0)
     redis (4.2.2)
-    regexp_parser (1.8.1)
+    regexp_parser (1.8.2)
     request_store (1.5.0)
       rack (>= 1.4)
     responders (3.0.1)
@@ -714,10 +714,10 @@ GEM
       rspec-rails (< 5.0)
     rspec-core (3.9.3)
       rspec-support (~> 3.9.3)
-    rspec-expectations (3.9.2)
+    rspec-expectations (3.9.3)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
-    rspec-html-matchers (0.9.3)
+    rspec-html-matchers (0.9.4)
       nokogiri (~> 1)
       rspec (>= 3.0.0.a, < 4)
     rspec-mocks (3.9.1)
@@ -733,7 +733,7 @@ GEM
       rspec-support (~> 3.9.0)
     rspec-retry (0.6.2)
       rspec-core (> 3.3)
-    rspec-support (3.9.3)
+    rspec-support (3.9.4)
     rspec_junit_formatter (0.3.0)
       rspec-core (>= 2, < 4, != 2.12.0)
     rubocop (0.71.0)
@@ -840,7 +840,7 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
-    webmock (3.9.1)
+    webmock (3.9.3)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -853,7 +853,7 @@ GEM
       activesupport
     wisper (2.0.1)
     wisper-rspec (1.1.0)
-    wkhtmltopdf-binary (0.12.6.4)
+    wkhtmltopdf-binary (0.12.6.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
 

@@ -41,3 +41,5 @@ public/uploads
 /config/deploy/*
 /Capfile
 .rbenv-vars
+.rspec-failures
+decidim_dummy_app
