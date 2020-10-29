@@ -1,49 +1,7 @@
 GIT
-  remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: e55440aaa01d6b7b2f56942d9c9bd45e1aa32100
-  specs:
-    decidim-decidim_awesome (0.4)
-      decidim-admin (>= 0.21.0)
-      decidim-core (>= 0.21.0)
-      redcarpet (~> 3.4)
-
-GIT
-  remote: https://github.com/Platoniq/decidim-module-navigation_maps
-  revision: d816e695300a9ccc9e424a8986cd51ad256fa722
-  specs:
-    decidim-navigation_maps (1.0)
-      decidim-admin (>= 0.18.0)
-      decidim-core (>= 0.18.0)
-
-GIT
-  remote: https://github.com/Platoniq/decidim-module-notify
-  revision: b18919c0852c390812a9e85879a2c67b564c13ae
-  specs:
-    decidim-notify (0.2)
-      decidim-admin (>= 0.21)
-      decidim-core (>= 0.21)
-
-GIT
-  remote: https://github.com/Platoniq/decidim-module-term_customizer
-  revision: b675e40c3bebff54ac873c8214e2c22bd89675b4
-  branch: temp/0.22
-  specs:
-    decidim-term_customizer (0.22.0.dev)
-      decidim-admin (~> 0.22.0.dev)
-      decidim-core (~> 0.22.0.dev)
-
-GIT
-  remote: https://github.com/Platoniq/decidim-module-time_tracker
-  revision: e0a86aa7d06828069aaee95e8a51e8479cb726be
-  branch: feature/accountability_autoconfiguration
-  specs:
-    decidim-time_tracker (0.2)
-      decidim-core (>= 0.21)
-
-GIT
-  remote: https://github.com/decidim/decidim
-  revision: ab0699464a08b957edda78d94274e60be7c2e5b7
-  tag: release/0.22-stable
+  remote: https://github.com/Platoniq/decidim
+  revision: 3866eac37bc47c4db918978b65219572bc440b9b
+  tag: temp/0.22-surveys
   specs:
     decidim (0.22.0)
       decidim-accountability (= 0.22.0)
@@ -202,6 +160,8 @@ GIT
       wisper-rspec (~> 1.0)
     decidim-forms (0.22.0)
       decidim-core (= 0.22.0)
+      wicked_pdf (~> 1.4)
+      wkhtmltopdf-binary (~> 0.12)
     decidim-generators (0.22.0)
       decidim-core (= 0.22.0)
     decidim-meetings (0.22.0)
@@ -247,6 +207,48 @@ GIT
       sassc-rails (~> 2.1.2)
     decidim-verifications (0.22.0)
       decidim-core (= 0.22.0)
+
+GIT
+  remote: https://github.com/Platoniq/decidim-module-decidim_awesome
+  revision: e55440aaa01d6b7b2f56942d9c9bd45e1aa32100
+  specs:
+    decidim-decidim_awesome (0.4)
+      decidim-admin (>= 0.21.0)
+      decidim-core (>= 0.21.0)
+      redcarpet (~> 3.4)
+
+GIT
+  remote: https://github.com/Platoniq/decidim-module-navigation_maps
+  revision: d816e695300a9ccc9e424a8986cd51ad256fa722
+  specs:
+    decidim-navigation_maps (1.0)
+      decidim-admin (>= 0.18.0)
+      decidim-core (>= 0.18.0)
+
+GIT
+  remote: https://github.com/Platoniq/decidim-module-notify
+  revision: b18919c0852c390812a9e85879a2c67b564c13ae
+  specs:
+    decidim-notify (0.2)
+      decidim-admin (>= 0.21)
+      decidim-core (>= 0.21)
+
+GIT
+  remote: https://github.com/Platoniq/decidim-module-term_customizer
+  revision: b675e40c3bebff54ac873c8214e2c22bd89675b4
+  branch: temp/0.22
+  specs:
+    decidim-term_customizer (0.22.0.dev)
+      decidim-admin (~> 0.22.0.dev)
+      decidim-core (~> 0.22.0.dev)
+
+GIT
+  remote: https://github.com/Platoniq/decidim-module-time_tracker
+  revision: e0a86aa7d06828069aaee95e8a51e8479cb726be
+  branch: feature/accountability_autoconfiguration
+  specs:
+    decidim-time_tracker (0.2)
+      decidim-core (>= 0.21)
 
 GEM
   remote: https://rubygems.org/
