@@ -14,6 +14,7 @@ Rails.application.config.to_prepare do
                   else
                     group.participatory_processes.published.public_spaces
                   end
+
       @participatory_processes = processes.order(start_date: :asc)
     end
   end
