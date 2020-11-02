@@ -4,6 +4,8 @@ Free Open-Source participatory democracy, citizen participation and open governm
 
 This is the open-source repository for initial, based on [Decidim](https://github.com/decidim/decidim).
 
+![Test](https://github.com/Platoniq/decidim-demo/workflows/Test/badge.svg)
+
 ## Deploying the app
 
 The app is deployed with [Capistrano](http://capistranorb.com/) using [Figaro](https://github.com/laserlemon/figaro) for `ENV` configuration. In order to deploy it, these are the required steps:
