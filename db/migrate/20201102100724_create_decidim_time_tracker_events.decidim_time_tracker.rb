@@ -15,9 +15,9 @@ class CreateDecidimTimeTrackerEvents < ActiveRecord::Migration[5.2]
 
     drop_table :decidim_time_tracker_time_entries
 
-    add_timestamps :decidim_time_tracker_activities
-    add_timestamps :decidim_time_tracker_tasks
-    add_timestamps :decidim_time_tracker_milestones
-    add_timestamps :decidim_time_tracker_assignees
+    add_timestamps :decidim_time_tracker_activities, null: false, default: -> { "NOW()" }
+    add_timestamps :decidim_time_tracker_tasks, null: false, default: -> { "NOW()" }
+    add_timestamps :decidim_time_tracker_milestones, null: false, default: -> { "NOW()" }
+    add_timestamps :decidim_time_tracker_assignees, null: false, default: -> { "NOW()" }
   end
 end
