@@ -26,6 +26,7 @@ gem "uglifier", "~> 4.1"
 
 gem "delayed_job_web"
 gem "faker", "~> 1.9"
+gem "sentry-raven"
 gem "whenever", require: false
 
 group :development, :test do
