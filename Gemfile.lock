@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/Platoniq/decidim
-  revision: 07842c99147c775fb021b7898d9c617e146f98ff
+  revision: 25087f1b2ec1c3f5615f6f21bf3902b24876e772
   tag: temp/0.22-surveys
   specs:
     decidim (0.22.0)
@@ -209,15 +209,6 @@ GIT
       decidim-core (= 0.22.0)
 
 GIT
-  remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: e55440aaa01d6b7b2f56942d9c9bd45e1aa32100
-  specs:
-    decidim-decidim_awesome (0.4)
-      decidim-admin (>= 0.21.0)
-      decidim-core (>= 0.21.0)
-      redcarpet (~> 3.4)
-
-GIT
   remote: https://github.com/Platoniq/decidim-module-navigation_maps
   revision: d816e695300a9ccc9e424a8986cd51ad256fa722
   specs:
@@ -241,16 +232,6 @@ GIT
     decidim-term_customizer (0.22.0.dev)
       decidim-admin (~> 0.22.0.dev)
       decidim-core (~> 0.22.0.dev)
-
-GIT
-  remote: https://github.com/Platoniq/decidim-module-time_tracker
-  revision: eaad33f275efccea2ebdd6cbab4db3aec0fd5ef3
-  branch: fix/surveys-logic
-  specs:
-    decidim-time_tracker (0.3)
-      decidim-accountability (>= 0.22)
-      decidim-admin (>= 0.22)
-      decidim-core (>= 0.22)
 
 GEM
   remote: https://rubygems.org/
@@ -329,7 +310,7 @@ GEM
       parser (>= 2.4)
       smart_properties
     bindex (0.8.1)
-    bootsnap (1.5.0)
+    bootsnap (1.5.1)
       msgpack (~> 1.0)
     browser (2.7.1)
     builder (3.2.4)
@@ -397,6 +378,10 @@ GEM
     db-query-matchers (0.9.0)
       activesupport (>= 4.0, <= 6.0)
       rspec (~> 3.0)
+    decidim-decidim_awesome (0.5.1)
+      decidim-admin (>= 0.21.0, < 0.23)
+      decidim-core (>= 0.21.0, < 0.23)
+      redcarpet (~> 3.4)
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
     declarative-option (0.1.0)
@@ -444,7 +429,7 @@ GEM
       smart_properties
     erbse (0.1.4)
       temple
-    erubi (1.9.0)
+    erubi (1.10.0)
     etherpad-lite (0.3.0)
       rest-client (>= 1.6)
     execjs (2.7.0)
@@ -542,7 +527,7 @@ GEM
       actionmailer (>= 3.2)
       letter_opener (~> 1.0)
       railties (>= 3.2)
-    listen (3.2.1)
+    listen (3.3.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.3.1)
@@ -570,7 +555,7 @@ GEM
     mixlib-cli (2.1.8)
     mixlib-config (3.0.9)
       tomlrb
-    mixlib-shellout (3.1.7)
+    mixlib-shellout (3.2.2)
       chef-utils
     msgpack (1.3.3)
     multi_json (1.15.0)
@@ -619,14 +604,14 @@ GEM
     paper_trail (10.3.1)
       activerecord (>= 4.2)
       request_store (~> 1.1)
-    parallel (1.19.2)
+    parallel (1.20.0)
     parser (2.7.2.0)
       ast (~> 2.4.1)
     passenger (6.0.6)
       rack
       rake (>= 0.8.1)
     pg (1.1.4)
-    pg_search (2.3.4)
+    pg_search (2.3.5)
       activerecord (>= 5.2)
       activesupport (>= 5.2)
     premailer (1.14.2)
@@ -696,7 +681,7 @@ GEM
       virtus (~> 1.0.5)
       wisper (>= 1.6.1)
     redcarpet (3.5.0)
-    redis (4.2.2)
+    redis (4.2.3)
     regexp_parser (1.8.2)
     request_store (1.5.0)
       rack (>= 1.4)
@@ -822,7 +807,7 @@ GEM
     truncato (0.7.11)
       htmlentities (~> 4.3.1)
       nokogiri (>= 1.7.0, <= 2.0)
-    tzinfo (1.2.7)
+    tzinfo (1.2.8)
       thread_safe (~> 0.1)
     uber (0.1.0)
     uglifier (4.2.0)
@@ -846,7 +831,7 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
-    webmock (3.9.4)
+    webmock (3.10.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -878,12 +863,11 @@ DEPENDENCIES
   decidim!
   decidim-conferences!
   decidim-consultations!
-  decidim-decidim_awesome!
+  decidim-decidim_awesome (~> 0.5.1)
   decidim-dev!
   decidim-navigation_maps!
   decidim-notify!
   decidim-term_customizer!
-  decidim-time_tracker!
   delayed_job_active_record (~> 4.1)
   delayed_job_web
   faker (~> 1.9)
