@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  comfy_route :cms_admin, path: "/cms/admin"
+  # Ensure that this route is defined last
+  comfy_route :cms, path: "/cms"
+
   authenticated :user, ->(user) { user.admin? } do
     mount DelayedJobWeb, at: "/delayed_job"
   end

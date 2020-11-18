@@ -17,6 +17,7 @@ gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify"
 gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.22"
 
 # gem "deface"
+gem "comfortable_mexican_sofa", "~> 2.0.0"
 
 gem "bootsnap", "~> 1.4"
 

@@ -1,0 +1,11 @@
+<html>
+  <head>
+<%= stylesheet_link_tag comfy_cms_render_css_path(@cms_site.id, @cms_layout.identifier) %>
+  </head>
+  <body>
+    <%= yield %>
+
+
+  <%= javascript_include_tag comfy_cms_render_js_path(@cms_site.id, @cms_layout.identifier) %>
+  </body>
+</html>
