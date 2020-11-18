@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  mount Spina::Engine => '/cms'
+  
   authenticated :user, ->(user) { user.admin? } do
     mount DelayedJobWeb, at: "/delayed_job"
   end
