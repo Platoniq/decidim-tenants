@@ -15,6 +15,7 @@ gem "decidim-decidim_awesome", "~> 0.5.1"
 gem "decidim-navigation_maps", git: "https://github.com/Platoniq/decidim-module-navigation_maps"
 gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify"
 gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.22"
+gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker"
 
 # gem "deface"
 

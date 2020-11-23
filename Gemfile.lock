@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/Platoniq/decidim
-  revision: 25087f1b2ec1c3f5615f6f21bf3902b24876e772
+  revision: 8c0e7122e8371e9bdf06496f46128ba7d5eef3de
   tag: temp/0.22-surveys
   specs:
     decidim (0.22.0)
@@ -232,6 +232,15 @@ GIT
     decidim-term_customizer (0.22.0.dev)
       decidim-admin (~> 0.22.0.dev)
       decidim-core (~> 0.22.0.dev)
+
+GIT
+  remote: https://github.com/Platoniq/decidim-module-time_tracker
+  revision: dfa319ce2ecd13f1d38e1f1326027907f35e78cc
+  specs:
+    decidim-time_tracker (0.3)
+      decidim-accountability (>= 0.22)
+      decidim-admin (>= 0.22)
+      decidim-core (>= 0.22)
 
 GEM
   remote: https://rubygems.org/
@@ -604,10 +613,10 @@ GEM
     paper_trail (10.3.1)
       activerecord (>= 4.2)
       request_store (~> 1.1)
-    parallel (1.20.0)
+    parallel (1.20.1)
     parser (2.7.2.0)
       ast (~> 2.4.1)
-    passenger (6.0.6)
+    passenger (6.0.7)
       rack
       rake (>= 0.8.1)
     pg (1.1.4)
@@ -681,7 +690,7 @@ GEM
       virtus (~> 1.0.5)
       wisper (>= 1.6.1)
     redcarpet (3.5.0)
-    redis (4.2.3)
+    redis (4.2.5)
     regexp_parser (1.8.2)
     request_store (1.5.0)
       rack (>= 1.4)
@@ -868,6 +877,7 @@ DEPENDENCIES
   decidim-navigation_maps!
   decidim-notify!
   decidim-term_customizer!
+  decidim-time_tracker!
   delayed_job_active_record (~> 4.1)
   delayed_job_web
   faker (~> 1.9)
