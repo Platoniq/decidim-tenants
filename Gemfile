@@ -5,7 +5,7 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 # DECIDIM_VERSION="0.21.0"
-DECIDIM_VERSION = { git: "https://github.com/Platoniq/decidim", tag: "temp/0.22-surveys" }.freeze
+DECIDIM_VERSION = { git: "https://github.com/Platoniq/decidim", branch: "temp/0.22-surveys" }.freeze
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
@@ -15,13 +15,13 @@ gem "decidim-decidim_awesome", "~> 0.5.1"
 gem "decidim-navigation_maps", git: "https://github.com/Platoniq/decidim-module-navigation_maps"
 gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify"
 gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.22"
-gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker"
+gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker", branch: "feature/34-assignee-metadata"
 
 # gem "deface"
 
 gem "bootsnap", "~> 1.4"
 
-gem "puma", ">= 4.3"
+gem "puma", ">= 4.3.5"
 gem "uglifier", "~> 4.1"
 
 gem "delayed_job_web"

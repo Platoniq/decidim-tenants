@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/Platoniq/decidim
-  revision: 8c0e7122e8371e9bdf06496f46128ba7d5eef3de
-  tag: temp/0.22-surveys
+  revision: c39def403df3c9e4b3778520bf9a527c70ee2426
+  branch: temp/0.22-surveys
   specs:
     decidim (0.22.0)
       decidim-accountability (= 0.22.0)
@@ -235,12 +235,14 @@ GIT
 
 GIT
   remote: https://github.com/Platoniq/decidim-module-time_tracker
-  revision: dfa319ce2ecd13f1d38e1f1326027907f35e78cc
+  revision: afd8e13583b56bebb3945d71faead3794b650fe7
+  branch: feature/34-assignee-metadata
   specs:
     decidim-time_tracker (0.3)
       decidim-accountability (>= 0.22)
       decidim-admin (>= 0.22)
       decidim-core (>= 0.22)
+      decidim-forms (>= 0.22)
 
 GEM
   remote: https://rubygems.org/
@@ -339,7 +341,7 @@ GEM
     capistrano-rbenv (2.2.0)
       capistrano (~> 3.1)
       sshkit (~> 1.3)
-    capybara (3.33.0)
+    capybara (3.34.0)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
@@ -363,7 +365,7 @@ GEM
       actionpack (>= 3.0)
       cells (>= 4.1.6, < 5.0.0)
     charlock_holmes (0.7.7)
-    chef-utils (16.6.14)
+    chef-utils (16.8.14)
     childprocess (3.0.0)
     chronic (0.10.2)
     coercible (1.0.0)
@@ -394,10 +396,10 @@ GEM
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
     declarative-option (0.1.0)
-    delayed_job (4.1.8)
-      activesupport (>= 3.0, < 6.1)
-    delayed_job_active_record (4.1.4)
-      activerecord (>= 3.0, < 6.1)
+    delayed_job (4.1.9)
+      activesupport (>= 3.0, < 6.2)
+    delayed_job_active_record (4.1.5)
+      activerecord (>= 3.0, < 6.2)
       delayed_job (>= 3.0, < 5)
     delayed_job_web (1.4.3)
       activerecord (> 3.0.0)
@@ -488,7 +490,7 @@ GEM
       multi_xml (>= 0.5.2)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
-    i18n-tasks (0.9.31)
+    i18n-tasks (0.9.32)
       activesupport (>= 4.0.2)
       ast (>= 2.1.0)
       erubi
@@ -536,7 +538,7 @@ GEM
       actionmailer (>= 3.2)
       letter_opener (~> 1.0)
       railties (>= 3.2)
-    listen (3.3.1)
+    listen (3.3.3)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.3.1)
@@ -593,8 +595,9 @@ GEM
       rack (>= 1.6.2, < 3)
     omniauth-facebook (5.0.0)
       omniauth-oauth2 (~> 1.2)
-    omniauth-google-oauth2 (0.8.0)
+    omniauth-google-oauth2 (0.8.1)
       jwt (>= 2.0)
+      oauth2 (~> 1.1)
       omniauth (>= 1.1.1)
       omniauth-oauth2 (>= 1.6)
     omniauth-oauth (1.1.0)
@@ -631,7 +634,7 @@ GEM
       actionmailer (>= 3)
       premailer (~> 1.7, >= 1.7.9)
     public_suffix (4.0.6)
-    puma (5.0.4)
+    puma (5.1.1)
       nio4r (~> 2.0)
     rack (2.2.3)
     rack-attack (6.3.1)
@@ -689,7 +692,7 @@ GEM
       activesupport (>= 4.1.0)
       virtus (~> 1.0.5)
       wisper (>= 1.6.1)
-    redcarpet (3.5.0)
+    redcarpet (3.5.1)
     redis (4.2.5)
     regexp_parser (1.8.2)
     request_store (1.5.0)
@@ -801,7 +804,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sshkit (1.21.0)
+    sshkit (1.21.1)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     system_test_html_screenshots (0.1.2)
@@ -812,11 +815,11 @@ GEM
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
-    tomlrb (1.3.0)
+    tomlrb (2.0.0)
     truncato (0.7.11)
       htmlentities (~> 4.3.1)
       nokogiri (>= 1.7.0, <= 2.0)
-    tzinfo (1.2.8)
+    tzinfo (1.2.9)
       thread_safe (~> 0.1)
     uber (0.1.0)
     uglifier (4.2.0)
@@ -840,7 +843,7 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
-    webmock (3.10.0)
+    webmock (3.11.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -859,6 +862,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap (~> 1.4)
@@ -885,7 +889,7 @@ DEPENDENCIES
   letter_opener_web (~> 1.3)
   listen (~> 3.1)
   passenger (~> 6.0)
-  puma (>= 4.3)
+  puma (>= 4.3.5)
   sentry-raven
   spring (~> 2.0)
   spring-watcher-listen (~> 2.0)
@@ -897,4 +901,4 @@ RUBY VERSION
    ruby 2.6.6p146
 
 BUNDLED WITH
-   2.1.4
+   2.2.0
