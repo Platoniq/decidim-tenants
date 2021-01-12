@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 Decidim.configure do |config|
-  config.application_name = "Platoniq Decidim Demo"
-  config.mailer_sender = "noreply@demo.platoniq.net"
+  config.application_name = "Decidim at Platoniq"
+  config.mailer_sender = "noreply@platoniq.net"
 
   # Change these lines to set your preferred locales
   config.default_locale = :en
