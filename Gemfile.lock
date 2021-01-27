@@ -27,8 +27,8 @@ GIT
 
 GIT
   remote: https://github.com/Platoniq/decidim-module-time_tracker
-  revision: a277e53803915c3328392f59138f40c7483bcc1c
-  branch: develop
+  revision: a49b42e0d5aeee1378a9b57b25de47b146b17d9a
+  branch: main
   specs:
     decidim-time_tracker (0.3)
       decidim-accountability (>= 0.23.1)
