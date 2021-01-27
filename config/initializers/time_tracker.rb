@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # config/initializers/time_tracker.rb
 
 # Initialize my custom questionnaire placed in config/my_questionnaire.yml
