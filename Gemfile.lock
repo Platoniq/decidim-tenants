@@ -27,14 +27,16 @@ GIT
 
 GIT
   remote: https://github.com/Platoniq/decidim-module-time_tracker
-  revision: 7b85e83c546c0c20ae761ec59ad8f139f491f767
-  branch: main
+  revision: a277e53803915c3328392f59138f40c7483bcc1c
+  branch: develop
   specs:
     decidim-time_tracker (0.3)
-      decidim-accountability (>= 0.22)
-      decidim-admin (>= 0.22)
-      decidim-core (>= 0.22)
-      decidim-forms (>= 0.22)
+      decidim-accountability (>= 0.23.1)
+      decidim-admin (>= 0.23.1)
+      decidim-core (>= 0.23.1)
+      decidim-forms (>= 0.23.1)
+      wicked_pdf (~> 1.4)
+      wkhtmltopdf-binary (~> 0.12)
 
 GEM
   remote: https://rubygems.org/
