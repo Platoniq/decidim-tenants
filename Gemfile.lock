@@ -1,22 +1,4 @@
 GIT
-  remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: c76888740fd96e15848d7af21d686d597945f70e
-  branch: fix/release-0.23
-  specs:
-    decidim-decidim_awesome (0.6.1)
-      decidim-admin (>= 0.23.1, < 0.24)
-      decidim-core (>= 0.23.1, < 0.24)
-      redcarpet (~> 3.4)
-
-GIT
-  remote: https://github.com/Platoniq/decidim-module-navigation_maps
-  revision: 5ae7d5bb09c27053b6069e707b0b339a0a305ea8
-  specs:
-    decidim-navigation_maps (1.0)
-      decidim-admin (>= 0.18.0)
-      decidim-core (>= 0.18.0)
-
-GIT
   remote: https://github.com/Platoniq/decidim-module-term_customizer
   revision: 161bcbb4364cd265af8eeceed3f393f196136564
   branch: temp/0.23
@@ -317,7 +299,7 @@ GEM
       execjs (~> 2.0)
     batch-loader (1.5.0)
     bcrypt (3.1.16)
-    better_html (1.0.15)
+    better_html (1.0.16)
       actionview (>= 4.0)
       activesupport (>= 4.0)
       ast (~> 2.0)
@@ -326,7 +308,7 @@ GEM
       parser (>= 2.4)
       smart_properties
     bindex (0.8.1)
-    bootsnap (1.5.1)
+    bootsnap (1.7.0)
       msgpack (~> 1.0)
     browser (2.7.1)
     builder (3.2.4)
@@ -346,7 +328,7 @@ GEM
     capistrano-rbenv (2.2.0)
       capistrano (~> 3.1)
       sshkit (~> 1.3)
-    capybara (3.35.1)
+    capybara (3.35.3)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
@@ -370,7 +352,7 @@ GEM
       actionpack (>= 3.0)
       cells (>= 4.1.6, < 5.0.0)
     charlock_holmes (0.7.7)
-    chef-utils (16.9.29)
+    chef-utils (16.9.32)
     childprocess (3.0.0)
     chronic (0.10.2)
     coercible (1.0.0)
@@ -395,6 +377,13 @@ GEM
     db-query-matchers (0.9.0)
       activesupport (>= 4.0, <= 6.0)
       rspec (~> 3.0)
+    decidim-decidim_awesome (0.6.2)
+      decidim-admin (>= 0.22.0, < 0.24)
+      decidim-core (>= 0.22.0, < 0.24)
+      redcarpet (~> 3.4)
+    decidim-navigation_maps (1.1.1)
+      decidim-admin (>= 0.22, < 0.24)
+      decidim-core (>= 0.22, < 0.24)
     decidim-notify (0.3)
       decidim-admin (>= 0.21)
       decidim-core (>= 0.21)
@@ -496,7 +485,7 @@ GEM
     httparty (0.18.1)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
-    i18n (1.8.7)
+    i18n (1.8.8)
       concurrent-ruby (~> 1.0)
     i18n-tasks (0.9.33)
       activesupport (>= 4.0.2)
@@ -546,7 +535,7 @@ GEM
       actionmailer (>= 3.2)
       letter_opener (~> 1.0)
       railties (>= 3.2)
-    listen (3.4.0)
+    listen (3.4.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.3.1)
@@ -576,7 +565,7 @@ GEM
       tomlrb
     mixlib-shellout (3.2.2)
       chef-utils
-    msgpack (1.3.3)
+    msgpack (1.4.2)
     multi_json (1.15.0)
     multi_xml (0.6.0)
     multipart-post (2.1.1)
@@ -609,9 +598,9 @@ GEM
       oauth2 (~> 1.1)
       omniauth (>= 1.1.1)
       omniauth-oauth2 (>= 1.6)
-    omniauth-oauth (1.1.0)
+    omniauth-oauth (1.2.0)
       oauth
-      omniauth (~> 1.0)
+      omniauth (>= 1.0, < 3)
     omniauth-oauth2 (1.7.1)
       oauth2 (~> 1.4)
       omniauth (>= 1.9, < 3)
@@ -643,7 +632,7 @@ GEM
       actionmailer (>= 3)
       premailer (~> 1.7, >= 1.7.9)
     public_suffix (4.0.6)
-    puma (5.1.1)
+    puma (5.2.0)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
@@ -814,13 +803,13 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sshkit (1.21.1)
+    sshkit (1.21.2)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     system_test_html_screenshots (0.1.2)
       actionpack (>= 5.2, < 6.0.a)
     temple (0.8.2)
-    terminal-table (2.0.0)
+    terminal-table (3.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thor (1.1.0)
     thread_safe (0.3.6)
@@ -853,7 +842,7 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
-    webmock (3.11.1)
+    webmock (3.11.2)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -885,9 +874,9 @@ DEPENDENCIES
   decidim!
   decidim-conferences!
   decidim-consultations!
-  decidim-decidim_awesome!
+  decidim-decidim_awesome (~> 0.6.2)
   decidim-dev!
-  decidim-navigation_maps!
+  decidim-navigation_maps (~> 1.1.1)
   decidim-notify (~> 0.3.0)
   decidim-term_customizer!
   decidim-time_tracker!
