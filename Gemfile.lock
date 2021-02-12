@@ -1,14 +1,4 @@
 GIT
-  remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: 295ee53aa313912a49d06f03972b910e64d465a4
-  branch: scoped-styles
-  specs:
-    decidim-decidim_awesome (0.6.2)
-      decidim-admin (>= 0.22.0, < 0.24)
-      decidim-core (>= 0.22.0, < 0.24)
-      redcarpet (~> 3.4)
-
-GIT
   remote: https://github.com/Platoniq/decidim-module-term_customizer
   revision: 161bcbb4364cd265af8eeceed3f393f196136564
   branch: temp/0.23
@@ -388,6 +378,10 @@ GEM
     db-query-matchers (0.9.0)
       activesupport (>= 4.0, <= 6.0)
       rspec (~> 3.0)
+    decidim-decidim_awesome (0.6.3)
+      decidim-admin (>= 0.22.0, < 0.24)
+      decidim-core (>= 0.22.0, < 0.24)
+      redcarpet (~> 3.4)
     decidim-navigation_maps (1.1.1)
       decidim-admin (>= 0.22, < 0.24)
       decidim-core (>= 0.22, < 0.24)
@@ -882,7 +876,7 @@ DEPENDENCIES
   decidim!
   decidim-conferences!
   decidim-consultations!
-  decidim-decidim_awesome!
+  decidim-decidim_awesome (~> 0.6.3)
   decidim-dev!
   decidim-navigation_maps (~> 1.1.1)
   decidim-notify (~> 0.3.0)
