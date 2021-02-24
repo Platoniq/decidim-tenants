@@ -1,7 +1,6 @@
 GIT
   remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: 9eadc6c04bb49527ae3651b702fa4d4483a1bfe3
-  branch: menu-hakcs
+  revision: 4d6ae0856eb02656635ffe61a175de9fd452e80c
   specs:
     decidim-decidim_awesome (0.6.4)
       decidim-admin (>= 0.22.0, < 0.24)
