@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: 4d6ae0856eb02656635ffe61a175de9fd452e80c
+  revision: 1d1bcf9520f690a570495fde5c26364bbe01e0b5
   specs:
-    decidim-decidim_awesome (0.6.4)
+    decidim-decidim_awesome (0.6.6)
       decidim-admin (>= 0.22.0, < 0.24)
       decidim-core (>= 0.22.0, < 0.24)
       redcarpet (~> 3.4)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/decidim/decidim
-  revision: 083d5985922f16c013adf9909ede0ee69ec2bda7
+  revision: f6fad28cc192e6c52002b41624a2836f7307a357
   branch: release/0.23-stable
   specs:
     decidim (0.23.3)
@@ -560,7 +560,7 @@ GEM
     method_source (1.0.0)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2021.0212)
+    mime-types-data (3.2021.0225)
     mimemagic (0.3.5)
     mini_magick (4.11.0)
     mini_mime (1.0.2)
@@ -849,7 +849,7 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
-    webmock (3.11.2)
+    webmock (3.11.3)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
