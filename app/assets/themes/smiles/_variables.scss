@@ -1,0 +1,91 @@
+@import "mixins";
+
+$pink: #ff00bd;
+$gray: #d9d9d9;
+$black: #000000;
+$white: #ffffff;
+
+$primary: $pink;
+$primary-rgb: 255, 0, 189;
+$secondary: $black;
+$secondary-rgb: 0, 0, 0;
+$success: #00ffbd;
+$success-rgb: 0, 255, 189;
+$warning: #ffbd00;
+$warning-rgb: 255, 189, 0;
+$alert: #ff0000;
+$alert-rgb: 255, 0, 0;
+
+$border-radius: 0;
+
+$border-width: 2px;
+$border-width-big: 4px;
+
+// Variables
+$link-color: $pink;
+$link-color-disabled: desaturate($pink, 50%);
+$link-color-hover: $black;
+
+$border-color: $gray;
+$border-width: 4px;
+$border-width-thin: 2px;
+$border: $border-width solid $border-color;
+$border-thin: $border-width-thin solid $border-color;
+
+$body-font-color: $black;
+$body-background-color: $white;
+$title-bar-color: $body-font-color;
+
+$title-bar-bg: $body-background-color;
+$navbar-bg: $body-background-color;
+$navbar-fg: $body-font-color;
+$navbar-fg-hover: var(--primary);
+
+$twitter: #55acee;
+$facebook: #3b5998;
+$google: #dd4b39;
+
+// background colors used in public diff views
+$color-addition: #e6ffed;
+$color-removal: #ffeef0;
+
+:root {
+  --primary: #{$primary};
+  --primary-rgb: #{$primary-rgb};
+  --secondary: #{$secondary};
+  --secondary-rgb: #{$secondary-rgb};
+  --success: #{$success};
+  --success-rgb: #{$success-rgb};
+  --warning: #{$warning};
+  --warning-rgb: #{$warning-rgb};
+  --alert: #{$alert};
+  --alert-rgb: #{$alert-rgb};
+  --twitter: #{$twitter};
+  --facebook: #{$facebook};
+  --google: #{$google};
+}
+
+.callout.primary {
+  background-color: lighten($primary, 25%);
+}
+
+.callout.secondary {
+  background-color: lighten($secondary, 50%);
+}
+
+.callout.success {
+  background-color: lighten($success, 25%);
+}
+
+.callout.warning {
+  background-color: lighten($warning, 25%);
+}
+
+.callout.alert {
+  background-color: lighten($alert, 25%);
+}
+
+$unit: 16px;
+
+@import "./fonts";
+@import "./mixins";

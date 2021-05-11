@@ -1,0 +1,15 @@
+@import "variables";
+
+.process-header__main {
+  clip-path: none;
+}
+
+.process-nav {
+  box-shadow: none;
+  border-bottom: $border-width solid $black;
+
+  &__link {
+    text-transform: none;
+    @include font-heading;
+  }
+}

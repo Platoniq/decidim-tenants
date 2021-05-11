@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?Inter:wght@400;600;700&family=Zilla+Slab:ital,wght@0,500;0,700;1,500;1,700&display=swap");
+
+@mixin font-heading() {
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  text-transform: none;
+}
+
+@mixin font-body() {
+  font-family: "Inter", sans-serif;
+}
+
+@mixin font-link() {
+  @include font-sans;
+  font-weight: bold;
+  text-transform: none;
+  text-decoration: underline;
+}
+
+@mixin font-button() {
+  @include font-heading;
+  font-weight: 500;
+  text-decoration: none;
+}

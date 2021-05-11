@@ -1,0 +1,14 @@
+@import "variables";
+
+.mini-footer,
+.main-footer {
+  background: $black;
+
+  a {
+    color: $gray;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
