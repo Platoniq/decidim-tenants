@@ -7,10 +7,17 @@
 
 .navbar {
   background-color: $navbar-bg;
-  border-top: $border-width solid $black;
+  border-top: none;
 
-  .main-nav__link {
+  .row {
+    padding: 0;
+  }
+}
+
+.main-nav {
+  &__link {
     a {
+      font-weight: bold;
       color: $navbar-fg;
 
       &:hover {
@@ -24,9 +31,13 @@
       color: $white;
 
       &:hover {
+        background: var(--primary);
         color: $white;
       }
     }
+  }
+  ul > li {
+    flex: unset;
   }
 }
 
