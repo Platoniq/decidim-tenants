@@ -11,9 +11,8 @@
   }
   &::after {
     content: image-url("smiles/icon.svg");
-    position: absolute;
     display: block;
-    left: 8em;
+    margin-left: 7em;
     top: 1em;
 
     animation: animated-logo-hider;
@@ -22,9 +21,8 @@
 
   &::before {
     content: image-url("smiles/smiles.svg");
-    position: absolute;
     display: block;
-    left: 1em;
+    margin-left: 0em;
     top: 1em;
 
     animation: animated-logo-hide;
@@ -34,10 +32,10 @@
 
 @keyframes animated-logo-hider {
   0% {
-    left: 8em;
+    margin-left: 7em;
   }
   100% {
-    left: 1em;
+    margin-left: 0em;
   }
 }
 @keyframes animated-logo-hide {
