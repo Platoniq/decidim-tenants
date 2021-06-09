@@ -90,6 +90,10 @@ $color-removal: #ffeef0;
   @include callout(var(--alert));
 }
 
+.callout + .callout {
+  margin-top: 1em;
+}
+
 $unit: 16px;
 
 @import "./fonts";

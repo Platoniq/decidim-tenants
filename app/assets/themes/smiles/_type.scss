@@ -44,3 +44,10 @@ html,
 body {
   @include font-body;
 }
+
+.section-heading {
+  @include font-body;
+  letter-spacing: unset;
+  text-transform: none;
+  font-size: $h1-size * 0.35;
+}
