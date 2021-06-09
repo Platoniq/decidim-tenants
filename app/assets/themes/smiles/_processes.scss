@@ -12,4 +12,12 @@
     text-transform: none;
     @include font-heading;
   }
+
+  &__content li.is-active {
+    box-shadow: none;
+    background: var(--primary);
+    a {
+      color: $white;
+    }
+  }
 }

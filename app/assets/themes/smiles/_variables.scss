@@ -1,36 +1,35 @@
 @import "mixins";
 
-$pink: #ff00bd;
+$pink: #d700bd;
 $gray: #d9d9d9;
 $black: #000000;
 $white: #ffffff;
+$aubergine: #73376c;
 
 $primary: $pink;
 $primary-rgb: 255, 0, 189;
 $secondary: $black;
 $secondary-rgb: 0, 0, 0;
-$success: #00ffbd;
-$success-rgb: 0, 255, 189;
-$warning: #ffbd00;
-$warning-rgb: 255, 189, 0;
-$alert: #ff0000;
-$alert-rgb: 255, 0, 0;
+$success: #24a85f;
+$success-rgb: 36, 168, 95;
+$warning: #ded049;
+$warning-rgb: 222, 208, 73;
+$alert: #f54433;
+$alert-rgb: 245, 68, 51;
 
 $border-radius: 0;
 
-$border-width: 2px;
-$border-width-big: 4px;
-
 // Variables
 $link-color: $pink;
-$link-color-disabled: desaturate($pink, 50%);
+$link-color-disabled: $aubergine;
 $link-color-hover: $black;
 
-$border-color: $gray;
-$border-width: 4px;
-$border-width-thin: 2px;
+$border-color: $black;
+$border-width: 1px;
+$border-width-big: 2px;
+$border-width-huge: 8px;
 $border: $border-width solid $border-color;
-$border-thin: $border-width-thin solid $border-color;
+$border-big: $border-width-big solid $border-color;
 
 $body-font-color: $black;
 $body-background-color: $white;
@@ -65,24 +64,30 @@ $color-removal: #ffeef0;
   --google: #{$google};
 }
 
+@mixin callout($color) {
+  background-color: $body-background-color;
+  border: $border-width solid $color;
+  border-left: $border-width-huge solid $color;
+}
+
 .callout.primary {
-  background-color: lighten($primary, 25%);
+  @include callout(var(--primary));
 }
 
 .callout.secondary {
-  background-color: lighten($secondary, 50%);
+  @include callout($body-font-color);
 }
 
 .callout.success {
-  background-color: lighten($success, 25%);
+  @include callout(var(--success));
 }
 
 .callout.warning {
-  background-color: lighten($warning, 25%);
+  @include callout(var(--warning));
 }
 
 .callout.alert {
-  background-color: lighten($alert, 25%);
+  @include callout(var(--alert));
 }
 
 $unit: 16px;

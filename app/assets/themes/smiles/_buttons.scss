@@ -13,10 +13,11 @@
 .button.hollow:hover,
 .button.hollow.focus,
 .button.hollow:focus {
-  border-color: transparent;
-  background-color: var(--primary);
-  color: $white;
+  // border-color: transparent;
+  // background-color: var(--primary);
+  // color: $white;
 }
+
 .button--nomargin {
   border: 1px solid transparent;
 }

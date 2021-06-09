@@ -5,10 +5,6 @@
   padding: 0;
 }
 
-.logo-wrapper span {
-  color: $title-bar-color;
-}
-
 .navbar {
   background-color: $navbar-bg;
   border-top: $border-width solid $black;
@@ -109,7 +105,7 @@
 
   .topbar__dropmenu .is-dropdown-submenu {
     box-shadow: none;
-    border: $border-thin;
+    border: $border-big;
     border-radius: 0;
 
     &::before {
