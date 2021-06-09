@@ -1,0 +1,47 @@
+.logo-wrapper {
+  span {
+    display: none;
+  }
+  &::after {
+    content: image-url("smiles/icon.svg");
+    position: absolute;
+    display: block;
+    left: 9.5em;
+    top: 1em;
+
+    animation: animated-logo-hider;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+
+  &::before {
+    content: image-url("smiles/smiles.svg");
+    position: absolute;
+    display: block;
+    left: 2em;
+    top: 1em;
+
+    animation: animated-logo-hide;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes animated-logo-hider {
+  0% {
+    left: 9.5em;
+  }
+  100% {
+    left: 1em;
+  }
+}
+@keyframes animated-logo-hide {
+  0% {
+    clip-path: inset(0 0 0 7em);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
