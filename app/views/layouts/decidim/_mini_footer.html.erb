@@ -28,5 +28,3 @@
     </div>
   </div>
 </div>
-
-<%= javascript_include_tag "themes/#{current_organization.host}" if current_organization.present? && File.exist?(Rails.root.join("app", "assets", "javascripts", "themes", "#{current_organization.host}.js")) %>
