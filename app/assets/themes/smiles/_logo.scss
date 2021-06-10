@@ -1,0 +1,55 @@
+@mixin animation-params {
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+$pink-logo-width: 120px;
+
+.logo-wrapper {
+  margin-right: auto;
+
+  span {
+    padding-left: 0;
+
+    &::after {
+      content: image-url("smiles/icon.svg");
+      display: block;
+      margin-left: $pink-logo-width;
+      top: 1em;
+
+      animation: animated-logo-hider;
+      @include animation-params;
+    }
+
+    &::before {
+      border: none;
+      content: image-url("smiles/smiles.svg");
+      display: block;
+      margin-left: 0em;
+      top: 1em;
+
+      animation: animated-logo-hide;
+      @include animation-params;
+    }
+  }
+}
+
+@keyframes animated-logo-hider {
+  0% {
+    margin-left: $pink-logo-width;
+  }
+  100% {
+    margin-left: 0em;
+  }
+}
+
+@keyframes animated-logo-hide {
+  0% {
+    clip-path: inset(0 0 0 $pink-logo-width);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}

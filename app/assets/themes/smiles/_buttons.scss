@@ -1,0 +1,35 @@
+@import "variables";
+
+.button {
+  @include font-button;
+}
+
+.button--sc {
+  text-transform: none;
+}
+
+.button.hollow,
+.button.hollow.hover,
+.button.hollow:hover,
+.button.hollow.focus,
+.button.hollow:focus {
+  // border-color: transparent;
+  // background-color: var(--primary);
+  // color: $white;
+}
+
+.button--nomargin {
+  border: 1px solid transparent;
+}
+
+.button.small {
+  font-size: 1rem;
+}
+
+.card__support .card__button {
+  font-size: 100%;
+}
+
+.button--shadow.secondary {
+  background: $body-font-color;
+}
