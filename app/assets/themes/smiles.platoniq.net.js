@@ -10,6 +10,10 @@ if (window.location.hostname.match(HOST_REGEX)) {
     const $logoWrapper = $(".logo-wrapper");
     $logoWrapper.html("");
     $logoWrapper.append(`<span class="smiles-logo"></span>`);
+
+    const $euFooter = $(".eu-footer");
+
+    $euFooter.removeClass("hide");
   })
 
 
