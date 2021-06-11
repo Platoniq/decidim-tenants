@@ -83,6 +83,16 @@
     }
   }
 
+  .logo-wrapper {
+    padding-left: 2.5rem;
+  }
+
+  @media (min-width: 75em) {
+    .logo-wrapper {
+      padding-left: 0;
+    }
+  }
+
   &__admin__link {
     margin-right: $unit;
   }

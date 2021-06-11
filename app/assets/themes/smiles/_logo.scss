@@ -9,29 +9,31 @@ $pink-logo-width: 120px;
 
 .logo-wrapper {
   margin-right: auto;
+  top: 0.5em;
 
-  span {
+  .smiles-logo {
     padding-left: 0;
 
+    &::before,
     &::after {
-      content: image-url("smiles/icon.svg");
       display: block;
-      margin-left: $pink-logo-width;
-      top: 1em;
-
-      animation: animated-logo-hider;
+      border: none;
+      top: 0;
       @include animation-params;
     }
 
-    &::before {
-      border: none;
-      content: image-url("smiles/smiles.svg");
-      display: block;
-      margin-left: 0em;
-      top: 1em;
+    &::after {
+      content: image-url("smiles/icon.svg");
+      margin-left: $pink-logo-width;
 
-      animation: animated-logo-hide;
-      @include animation-params;
+      animation-name: animated-logo-hider;
+    }
+
+    &::before {
+      content: image-url("smiles/smiles.svg");
+      margin-left: 0em;
+
+      animation-name: animated-logo-hide;
     }
   }
 }
@@ -48,8 +50,10 @@ $pink-logo-width: 120px;
 @keyframes animated-logo-hide {
   0% {
     clip-path: inset(0 0 0 $pink-logo-width);
+    -webkit-clip-path: inset(0 0 0 0);
   }
   100% {
     clip-path: inset(0 0 0 0);
+    -webkit-clip-path: inset(0 $pink-logo-width 0 0);
   }
 }

@@ -7,6 +7,9 @@ if (window.location.hostname.match(HOST_REGEX)) {
 
     $processNavRow.prependTo($processHeaderInner);
 
+    const $logoWrapper = $(".logo-wrapper");
+    $logoWrapper.html("");
+    $logoWrapper.append(`<span class="smiles-logo"></span>`);
   })
 
 
