@@ -1,7 +1,9 @@
 @font-face {
   font-family: "Inter";
-  src: url("smiles/Inter-Regular.woff2") format("woff2"), url("smiles/Inter-Regular.woff") format("woff"),
-    url("smiles/Inter-Regular.ttf") format("truetype");
+  src: 
+    font-url("smiles/Inter-Regular.woff2") format("woff2"), 
+    font-url("smiles/Inter-Regular.woff") format("woff"),
+    font-url("smiles/Inter-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,8 +11,10 @@
 
 @font-face {
   font-family: "Inter Semi";
-  src: url("smiles/Inter-SemiBoldItalic.woff2") format("woff2"), url("smiles/Inter-SemiBoldItalic.woff") format("woff"),
-    url("smiles/Inter-SemiBoldItalic.ttf") format("truetype");
+  src: 
+    font-url("smiles/Inter-SemiBoldItalic.woff2") format("woff2"), 
+    font-url("smiles/Inter-SemiBoldItalic.woff") format("woff"),
+    font-url("smiles/Inter-SemiBoldItalic.ttf") format("truetype");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -18,8 +22,10 @@
 
 @font-face {
   font-family: "Inter Semi";
-  src: url("smiles/Inter-SemiBold.woff2") format("woff2"), url("smiles/Inter-SemiBold.woff") format("woff"),
-    url("smiles/Inter-SemiBold.ttf") format("truetype");
+  src: 
+    font-url("smiles/Inter-SemiBold.woff2") format("woff2"), 
+    font-url("smiles/Inter-SemiBold.woff") format("woff"),
+    font-url("smiles/Inter-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -27,8 +33,10 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("smiles/Inter-MediumItalic.woff2") format("woff2"), url("smiles/Inter-MediumItalic.woff") format("woff"),
-    url("smiles/Inter-MediumItalic.ttf") format("truetype");
+  src: 
+    font-url("smiles/Inter-MediumItalic.woff2") format("woff2"), 
+    font-url("smiles/Inter-MediumItalic.woff") format("woff"),
+    font-url("smiles/Inter-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -36,8 +44,10 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("smiles/Inter-Medium.woff2") format("woff2"), url("smiles/Inter-Medium.woff") format("woff"),
-    url("smiles/Inter-Medium.ttf") format("truetype");
+  src: 
+    font-url("smiles/Inter-Medium.woff2") format("woff2"), 
+    font-url("smiles/Inter-Medium.woff") format("woff"),
+    font-url("smiles/Inter-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -45,8 +55,10 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("smiles/Inter-Italic.woff2") format("woff2"), url("smiles/Inter-Italic.woff") format("woff"),
-    url("smiles/Inter-Italic.ttf") format("truetype");
+  src: 
+    font-url("smiles/Inter-Italic.woff2") format("woff2"), 
+    font-url("smiles/Inter-Italic.woff") format("woff"),
+    font-url("smiles/Inter-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -54,9 +66,10 @@
 
 @font-face {
   font-family: "Zilla Slab";
-  src: url("smiles/ZillaSlab-MediumItalic.woff2") format("woff2"),
-    url("smiles/ZillaSlab-MediumItalic.woff") format("woff"),
-    url("smiles/ZillaSlab-MediumItalic.ttf") format("truetype");
+  src: 
+    font-url("smiles/ZillaSlab-MediumItalic.woff2") format("woff2"),
+    font-url("smiles/ZillaSlab-MediumItalic.woff") format("woff"),
+    font-url("smiles/ZillaSlab-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -64,8 +77,10 @@
 
 @font-face {
   font-family: "Zilla Slab";
-  src: url("smiles/ZillaSlab-Medium.woff2") format("woff2"), url("smiles/ZillaSlab-Medium.woff") format("woff"),
-    url("smiles/ZillaSlab-Medium.ttf") format("truetype");
+  src: 
+    font-url("smiles/ZillaSlab-Medium.woff2") format("woff2"), 
+    font-url("smiles/ZillaSlab-Medium.woff") format("woff"),
+    font-url("smiles/ZillaSlab-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
