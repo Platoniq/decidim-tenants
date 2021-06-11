@@ -1,6 +1,9 @@
 @import "./variables";
 
 /* fix color variables */
+.cookie-warning a {
+  color: var(--primary);
+}
 .button.hollow.primary:hover,
 .button.hollow.primary:focus {
   color: var(--primary);
