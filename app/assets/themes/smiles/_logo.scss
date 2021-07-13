@@ -24,36 +24,41 @@ $pink-logo-width: 120px;
 
     &::after {
       content: image-url("smiles/icon.svg");
-      margin-left: $pink-logo-width;
+      margin-left: 0;
+
+      position: relative;
+      z-index: 3;
 
       animation-name: animated-logo-hider;
     }
 
     &::before {
       content: image-url("smiles/smiles.svg");
-      margin-left: 0em;
+      margin-left: 0;
 
       animation-name: animated-logo-hide;
+      clip-path: inset(0 0 0 0);
+      -webkit-clip-path: inset(0 $pink-logo-width/2 0 0);
     }
   }
 }
 
 @keyframes animated-logo-hider {
   0% {
-    margin-left: $pink-logo-width;
+    margin-left: 0;
   }
   100% {
-    margin-left: 0em;
+    margin-left: $pink-logo-width;
   }
 }
 
 @keyframes animated-logo-hide {
   0% {
-    clip-path: inset(0 0 0 $pink-logo-width);
-    -webkit-clip-path: inset(0 0 0 0);
-  }
-  100% {
     clip-path: inset(0 0 0 0);
     -webkit-clip-path: inset(0 $pink-logo-width 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 $pink-logo-width);
+    -webkit-clip-path: inset(0 0 0 0);
   }
 }
