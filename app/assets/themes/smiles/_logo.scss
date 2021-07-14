@@ -38,7 +38,7 @@ $pink-logo-width: 120px;
 
       animation-name: animated-logo-hide;
       clip-path: inset(0 0 0 0);
-      -webkit-clip-path: inset(0 0 0 0);
+      -webkit-clip-path: inset(0 $pink-logo-width/2 0 0);
     }
   }
 }
@@ -55,10 +55,10 @@ $pink-logo-width: 120px;
 @keyframes animated-logo-hide {
   0% {
     clip-path: inset(0 0 0 0);
-    -webkit-clip-path: inset(0 0 0 0);
+    -webkit-clip-path: inset(0 $pink-logo-width 0 0);
   }
   100% {
     clip-path: inset(0 0 0 $pink-logo-width);
-    -webkit-clip-path: inset(0 $pink-logo-width 0 0);
+    -webkit-clip-path: inset(0 0 0 0);
   }
 }
