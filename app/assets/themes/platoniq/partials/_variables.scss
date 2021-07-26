@@ -1,0 +1,38 @@
+$palette: (
+  neutral: #f3f3ef,
+  brand: #462949,
+  primary: #e94668,
+  secondary: #99ff99,
+  success: #99ffcc,
+  warning: #ffff99,
+  alert: #b792ff,
+  highlight: #72d8ff,
+);
+
+@import "typography";
+
+@function rgb-from-hex($color) {
+  @return (red($color), green($color), blue($color));
+}
+
+:root {
+  --text: #{map-get($palette, brand)};
+  --text-rgb: #{rgb-from-hex(map-get($palette, brand))};
+  --neutral: #{map-get($palette, neutral)};
+  --neutral-rgb: #{rgb-from-hex(map-get($palette, neutral))};
+  --brand: #{map-get($palette, brand)};
+  --brand-rgb: #{rgb-from-hex(map-get($palette, brand))};
+  --primary: #{map-get($palette, primary)};
+  --primary-rgb: #{rgb-from-hex(map-get($palette, primary))};
+  --secondary: #{map-get($palette, secondary)};
+  --secondary-rgb: #{rgb-from-hex(map-get($palette, secondary))};
+  --success: #{map-get($palette, success)};
+  --success-rgb: #{rgb-from-hex(map-get($palette, success))};
+  --warning: #{map-get($palette, warning)};
+  --warning-rgb: #{rgb-from-hex(map-get($palette, warning))};
+  --alert: #{map-get($palette, alert)};
+  --alert-rgb: #{rgb-from-hex(map-get($palette, alert))};
+  --twitter: #{map-get($palette, highlight)};
+  --facebook: #{map-get($palette, highlight)};
+  --google: #{map-get($palette, highlight)};
+}

@@ -1,0 +1,89 @@
+$border-radius: 0;
+$border-color: var(--neutral);
+$border-width: 1px;
+$border-width-wide: 2px;
+$border-width-huge: 8px;
+$border-thin: $border-width solid $border-color;
+$border-wide: $border-width-wide solid $border-color;
+$border-huge: $border-width-huge solid $border-color;
+
+.button {
+  border-radius: $border-radius;
+
+  &.hollow,
+  &.hollow.disabled,
+  &.hollow[disabled],
+  &.hollow.disabled:hover,
+  &.hollow[disabled]:hover,
+  &.hollow.disabled:focus,
+  &.hollow[disabled]:focus {
+    border-width: $border-width;
+  }
+}
+
+.card {
+  border-radius: $border-radius;
+  border-width: $border-width;
+}
+
+.card .card__image,
+.card--mini .card__image-top {
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+
+.card--process__column .card--full__image {
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
+.card__footer {
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
+hr.reset {
+  border-bottom: $border-wide;
+}
+
+.process_stats {
+  margin-left: 1em;
+
+  .process_stats-item {
+    border: $border-thin;
+    border-radius: $border-radius;
+    margin-right: 1em;
+  }
+}
+
+.conference-programme .programme-selector {
+  border-bottom: $border-wide;
+  padding-bottom: 1.5rem;
+}
+
+.dropdown-pane {
+  border-radius: $border-radius;
+}
+
+.input-group > :first-child,
+.input-group > :first-child.input-group-button > * {
+  border-radius: $border-radius;
+}
+
+[type="text"],
+[type="password"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="month"],
+[type="week"],
+[type="email"],
+[type="number"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="url"],
+[type="color"],
+textarea {
+  border-radius: $border-radius;
+}

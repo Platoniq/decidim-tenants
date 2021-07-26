@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap);
+
+$font-family: "Inter";
+
+$font-weight-light: 300;
+$font-weight-bold: 700;
+
+$letter-spacing: initial;
+$line-spacing: 120%;
+
+@mixin font-body {
+  font-family: $font-family;
+  font-weight: $font-weight-light;
+  letter-spacing: $letter-spacing;
+  line-height: 120%;
+}
+
+@mixin font-heading {
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
+  letter-spacing: $letter-spacing;
+  line-height: 120%;
+}
+
+body {
+  @include font-body;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.section-heading {
+  @include font-heading;
+}
+
+.section-heading {
+  &::before {
+    width: 1rem;
+    height: 1rem;
+    margin-bottom: 0;
+    vertical-align: middle;
+    animation-name: section-heading-before;
+    animation-duration: 1s;
+  }
+}
+
+@keyframes section-heading-before {
+  0% {
+    background-color: var(--primary);
+  }
+  33% {
+    background-color: var(--primary);
+  }
+  34% {
+    background-color: var(--brand);
+  }
+  66% {
+    background-color: var(--brand);
+  }
+  67% {
+    background-color: var(--secondary);
+  }
+  100% {
+    background-color: var(--secondary);
+  }
+}

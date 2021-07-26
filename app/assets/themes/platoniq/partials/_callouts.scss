@@ -1,0 +1,30 @@
+@import "variables";
+
+@mixin callout($color) {
+  background-color: $color;
+  border: none;
+}
+
+.callout.primary {
+  @include callout(var(--primary));
+}
+
+.callout.secondary {
+  @include callout(var(--secondary));
+}
+
+.callout.success {
+  @include callout(var(--success));
+}
+
+.callout.warning {
+  @include callout(var(--warning));
+}
+
+.callout.alert {
+  @include callout(var(--alert));
+}
+
+.callout + .callout {
+  margin-top: 1em;
+}
