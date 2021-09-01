@@ -13,9 +13,9 @@ AllCops:
     - "**/Rakefile"
   Exclude:
     - "**/vendor/**/*"
-    - "development_app/**/*"
-    - "spec/decidim_dummy_app/**/*"
     - "node_modules/**/*"
+    - "db/**/*.rb"
+    - "bin/*"
   # Default formatter will be used if no -f/--format option is given.
   DefaultFormatter: progress
   # Cop names are not displayed in offense messages by default. Change behavior
