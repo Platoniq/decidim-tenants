@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_01_105555) do
+ActiveRecord::Schema.define(version: 2021_09_01_112514) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1088,6 +1088,9 @@ ActiveRecord::Schema.define(version: 2021_09_01_105555) do
     t.datetime "updated_at", null: false
     t.jsonb "title", default: {}
     t.jsonb "description", default: {}
+    t.bigint "decidim_content_block_id"
+    t.integer "height", default: 475, null: false
+    t.index ["decidim_content_block_id"], name: "decidim_navigation_maps_constraint_content_block"
     t.index ["decidim_organization_id"], name: "decidim_navigation_maps_constraint_organization"
   end
 
@@ -1956,6 +1959,7 @@ ActiveRecord::Schema.define(version: 2021_09_01_105555) do
   add_foreign_key "decidim_debates_debates", "decidim_scopes"
   add_foreign_key "decidim_identities", "decidim_organizations"
   add_foreign_key "decidim_navigation_maps_blueprint_areas", "decidim_navigation_maps_blueprints"
+  add_foreign_key "decidim_navigation_maps_blueprints", "decidim_content_blocks"
   add_foreign_key "decidim_navigation_maps_blueprints", "decidim_organizations"
   add_foreign_key "decidim_newsletters", "decidim_users", column: "author_id"
   add_foreign_key "decidim_notify_notes", "decidim_users", column: "decidim_author_id"
