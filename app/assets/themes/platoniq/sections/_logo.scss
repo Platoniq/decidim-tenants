@@ -1,0 +1,12 @@
+@import "../partials/variables";
+
+.logo-wrapper {
+  span {
+    padding-left: 0;
+    &::before {
+      content: none;
+    }
+
+    @include font-logo;
+  }
+}

@@ -1,0 +1,48 @@
+.title-bar,
+.navbar {
+  background-color: var(--brand);
+}
+
+.topbar__search {
+  input {
+    background-color: var(--brand);
+  }
+  .input-group {
+    border-bottom: $border-wide;
+    border-bottom-color: var(--primary);
+  }
+}
+
+.main-nav__link {
+  a {
+    background: none;
+    box-shadow: none;
+    font-weight: bold;
+    z-index: 555;
+  }
+
+  &--active {
+    a {
+      &::before,
+      &::after {
+        color: var(--primary);
+      }
+      &::before {
+        content: ">>> ";
+      }
+      &::after {
+        content: " <<<";
+      }
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+
+        &::before,
+        &::after {
+          color: var(--secondary);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+a,
+.card__link {
+  color: var(--brand);
+
+  &:hover,
+  &:focus {
+    color: var(--primary);
+  }
+}
+
+.card__link .card__title:hover {
+  text-decoration: none;
+}
+
+.author-data .author__name,
+.side-panel__tabs .tabs-title.is-active > [role="tab"],
+.side-panel__tabs .tabs-title.is-active > a,
+.side-panel__tabs .tabs-title > [role="tab"]:hover,
+.side-panel__tabs .tabs-title > a:hover,
+.dropdown.menu > li.is-active > a,
+.topbar__dropmenu .is-dropdown-submenu li a {
+  color: var(--primary);
+}
+
+.topbar__dropmenu .is-dropdown-submenu li a:hover,
+.topbar__dropmenu .is-dropdown-submenu li a:focus {
+  color: var(--brand);
+}
+
+input:checked ~ .switch-paddle {
+  background: var(--success);
+}

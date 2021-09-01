@@ -1,0 +1,30 @@
+@keyframes card-stack {
+  0% {
+    box-shadow: 0.25rem 0.25rem 0 0 var(--primary);
+  }
+  50% {
+    box-shadow: 0.5rem 0.5rem 0 0 var(--primary);
+  }
+  100% {
+    box-shadow: 0.25rem 0.25rem 0 0 var(--primary);
+  }
+}
+
+.card__footer {
+  background-color: var(--brand);
+}
+
+.card--stack {
+  box-shadow: 0.5rem 0.5rem 0 0 var(--primary);
+  animation: card-stack 3s infinite;
+
+  &::before,
+  &::after {
+    content: none;
+  }
+}
+
+.card-data__item.processes_count_status {
+  border-right: none;
+  margin-right: 0px;
+}

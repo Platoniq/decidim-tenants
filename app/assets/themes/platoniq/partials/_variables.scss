@@ -32,7 +32,43 @@ $palette: (
   --warning-rgb: #{rgb-from-hex(map-get($palette, warning))};
   --alert: #{map-get($palette, alert)};
   --alert-rgb: #{rgb-from-hex(map-get($palette, alert))};
+  --highlight: #{map-get($palette, highlight)};
+  --highlight-rgb: #{rgb-from-hex(map-get($palette, highlight))};
   --twitter: #{map-get($palette, highlight)};
   --facebook: #{map-get($palette, highlight)};
   --google: #{map-get($palette, highlight)};
 }
+
+$gradient-palette-7: linear-gradient(
+  to right,
+  var(--highlight) 0%,
+  var(--highlight) 14.285714286%,
+  var(--secondary) 14.285714287%,
+  var(--secondary) 28.571428571%,
+  var(--brand) 28.571428572%,
+  var(--brand) 42.857142857%,
+  var(--neutral) 42.857142858%,
+  var(--neutral) 57.142857143%,
+  var(--primary) 57.142857144%,
+  var(--primary) 71.428571429%,
+  var(--alert) 71.42857143%,
+  var(--alert) 85.714285714%,
+  var(--warning) 85.714285715%,
+  var(--warning) 100%
+);
+
+$gradient-palette-6: linear-gradient(
+  to right,
+  var(--highlight) 0%,
+  var(--highlight) 16.666666666%,
+  var(--secondary) 16.666666667%,
+  var(--secondary) 33.333333333%,
+  var(--neutral) 33.333333334%,
+  var(--neutral) 50%,
+  var(--primary) 50.00000001%,
+  var(--primary) 66.666666666%,
+  var(--alert) 66.666666667%,
+  var(--alert) 83.3333333334%,
+  var(--warning) 83.3333333335%,
+  var(--warning) 100%
+);

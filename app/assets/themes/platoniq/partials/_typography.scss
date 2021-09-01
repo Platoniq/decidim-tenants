@@ -22,6 +22,14 @@ $line-spacing: 120%;
   line-height: 120%;
 }
 
+@mixin font-logo {
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
+  font-size: 2em;
+  letter-spacing: $letter-spacing;
+  line-height: 120%;
+}
+
 body {
   @include font-body;
 }
@@ -72,4 +80,10 @@ h6,
   100% {
     background-color: var(--secondary);
   }
+}
+
+.heading5,
+.author-data--big .author__name,
+.card__title {
+  font-weight: bold;
 }

@@ -1,0 +1,12 @@
+.mini-footer,
+.main-footer {
+  background-color: var(--brand);
+
+  a {
+    color: white;
+    &:hover,
+    :focus {
+      color: var(--neutral);
+    }
+  }
+}

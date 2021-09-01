@@ -1,6 +1,6 @@
 $border-radius: 0;
 $border-color: var(--neutral);
-$border-width: 1px;
+$border-width: 0px;
 $border-width-wide: 2px;
 $border-width-huge: 8px;
 $border-thin: $border-width solid $border-color;
@@ -17,7 +17,7 @@ $border-huge: $border-width-huge solid $border-color;
   &.hollow[disabled]:hover,
   &.hollow.disabled:focus,
   &.hollow[disabled]:focus {
-    border-width: $border-width;
+    border-width: $border-width-wide;
   }
 }
 
@@ -35,6 +35,11 @@ $border-huge: $border-width-huge solid $border-color;
 .card--process__column .card--full__image {
   border-top-right-radius: $border-radius;
   border-bottom-right-radius: $border-radius;
+}
+
+.card--stack::after,
+.card--stack::before {
+  border-radius: $border-radius;
 }
 
 .card__footer {
@@ -61,6 +66,7 @@ hr.reset {
   padding-bottom: 1.5rem;
 }
 
+.topbar__dropmenu .is-dropdown-submenu,
 .dropdown-pane {
   border-radius: $border-radius;
 }
@@ -68,6 +74,25 @@ hr.reset {
 .input-group > :first-child,
 .input-group > :first-child.input-group-button > * {
   border-radius: $border-radius;
+}
+
+.data-picker.picker-single .picker-values div a,
+.data-picker .picker-prompt a,
+select,
+.inline-filters button[data-toggle],
+.reveal {
+  border-radius: $border-radius;
+  border: $border-thin;
+  box-shadow: none;
+}
+
+.topbar__search {
+  input {
+    border-radius: $border-radius 0 0 $border-radius;
+  }
+  button[type="submit"] {
+    border-radius: $border-radius;
+  }
 }
 
 [type="text"],
@@ -86,4 +111,17 @@ hr.reset {
 [type="color"],
 textarea {
   border-radius: $border-radius;
+  box-shadow: none;
+  border: none;
+  border-bottom: $border-wide;
+  background: var(--neutral);
+  border-bottom-color: var(--brand);
+
+  &:focus {
+    box-shadow: none;
+    border: none;
+    border-bottom: $border-wide;
+    background: var(--neutral);
+    border-bottom-color: var(--primary);
+  }
 }
