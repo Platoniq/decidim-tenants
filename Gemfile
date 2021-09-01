@@ -25,7 +25,7 @@ gem "puma", ">= 4.3.5"
 gem "uglifier", "~> 4.1"
 
 gem "delayed_job_web"
-gem "faker", "~> 1.9"
+gem "faker", "~> 2.14"
 gem "sentry-raven"
 gem "whenever", require: false
 
