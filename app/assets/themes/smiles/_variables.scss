@@ -1,0 +1,100 @@
+@import "mixins";
+
+$pink: #d700bd;
+$gray: #d9d9d9;
+$black: #000000;
+$white: #ffffff;
+$aubergine: #73376c;
+
+$primary: $pink;
+$primary-rgb: 255, 0, 189;
+$secondary: $black;
+$secondary-rgb: 0, 0, 0;
+$success: #24a85f;
+$success-rgb: 36, 168, 95;
+$warning: #ded049;
+$warning-rgb: 222, 208, 73;
+$alert: #f54433;
+$alert-rgb: 245, 68, 51;
+
+$border-radius: 0;
+
+// Variables
+$link-color: $pink;
+$link-color-disabled: $aubergine;
+$link-color-hover: $black;
+
+$border-color: $black;
+$border-width: 1px;
+$border-width-big: 2px;
+$border-width-huge: 8px;
+$border: $border-width solid $border-color;
+$border-big: $border-width-big solid $border-color;
+
+$body-font-color: $black;
+$body-background-color: $white;
+$title-bar-color: $body-font-color;
+
+$title-bar-bg: $body-background-color;
+$navbar-bg: $body-background-color;
+$navbar-fg: $body-font-color;
+$navbar-fg-hover: var(--primary);
+
+$twitter: #55acee;
+$facebook: #3b5998;
+$google: #dd4b39;
+
+// background colors used in public diff views
+$color-addition: #e6ffed;
+$color-removal: #ffeef0;
+
+:root {
+  --primary: #{$primary};
+  --primary-rgb: #{$primary-rgb};
+  --secondary: #{$secondary};
+  --secondary-rgb: #{$secondary-rgb};
+  --success: #{$success};
+  --success-rgb: #{$success-rgb};
+  --warning: #{$warning};
+  --warning-rgb: #{$warning-rgb};
+  --alert: #{$alert};
+  --alert-rgb: #{$alert-rgb};
+  --twitter: #{$twitter};
+  --facebook: #{$facebook};
+  --google: #{$google};
+}
+
+@mixin callout($color) {
+  background-color: $body-background-color;
+  border: $border-width solid $color;
+  border-left: $border-width-huge solid $color;
+}
+
+.callout.primary {
+  @include callout(var(--primary));
+}
+
+.callout.secondary {
+  @include callout($body-font-color);
+}
+
+.callout.success {
+  @include callout(var(--success));
+}
+
+.callout.warning {
+  @include callout(var(--warning));
+}
+
+.callout.alert {
+  @include callout(var(--alert));
+}
+
+.callout + .callout {
+  margin-top: 1em;
+}
+
+$unit: 16px;
+
+@import "./fonts";
+@import "./mixins";

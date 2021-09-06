@@ -1,0 +1,84 @@
+@import "variables";
+
+.button {
+  border-radius: $border-radius;
+
+  &.hollow,
+  &.hollow.disabled,
+  &.hollow[disabled],
+  &.hollow.disabled:hover,
+  &.hollow[disabled]:hover,
+  &.hollow.disabled:focus,
+  &.hollow[disabled]:focus {
+    border-width: $border-width;
+  }
+}
+
+.card {
+  border-radius: $border-radius;
+  border-width: $border-width;
+}
+
+.card .card__image,
+.card--mini .card__image-top {
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+
+.card--process__column .card--full__image {
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
+.card__footer {
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
+hr.reset {
+  border-bottom: $border-width-big solid var(--secondary);
+}
+
+.process_stats {
+  margin-left: 1em;
+
+  .process_stats-item {
+    border: $border-width solid $gray;
+    border-radius: $border-radius;
+    margin-right: 1em;
+  }
+}
+
+.conference-programme .programme-selector {
+  border-bottom-width: $border-width-big;
+  border-bottom-color: var(--secondary);
+
+  padding-bottom: 1.5rem;
+}
+
+.dropdown-pane {
+  border-radius: $border-radius;
+}
+
+.input-group > :first-child,
+.input-group > :first-child.input-group-button > * {
+  border-radius: $border-radius;
+}
+
+[type="text"],
+[type="password"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="month"],
+[type="week"],
+[type="email"],
+[type="number"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="url"],
+[type="color"],
+textarea {
+  border-radius: $border-radius;
+}
