@@ -35,8 +35,11 @@ jobs:
           ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true
 
-      - run: bundle exec rubocop -P
-        name: Lint Ruby files
+      - name: Lint Ruby files
+        run: |
+          bundle exec rubocop -P
+          bundle exec mdl *.md
+          bundle exec erblint app/views/**/*.erb
 
       - name: Setup & create Database
         run: |
