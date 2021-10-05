@@ -3,11 +3,11 @@ name: Test
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 env:
-  RUBY_VERSION: 2.7.2
+  RUBY_VERSION: 2.7.4
   NODE_VERSION: 12.9.1
     
 jobs:
@@ -43,7 +43,6 @@ jobs:
 
       - name: Setup & create Database
         run: |
-          bundle exec rake decidim:generate_external_test_app
           bundle exec rails db:create db:schema:load
         env:
           RAILS_ENV: test
@@ -53,7 +52,8 @@ jobs:
       - name: Precompile assets
         run: bundle exec rake assets:precompile
         env:
-          RAILS_ENV: test
+          SECRET_KEY_BASE: some-secret
+          RAILS_ENV: productions
 
       - name: Run RSpec
         run: SIMPLECOV=1 CODECOV=1 bundle exec rspec
