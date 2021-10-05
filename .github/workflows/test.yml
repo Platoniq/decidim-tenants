@@ -53,7 +53,8 @@ jobs:
         run: bundle exec rake assets:precompile
         env:
           SECRET_KEY_BASE: some-secret
-          RAILS_ENV: productions
+          GEOCODER_API_KEY: here_api_key
+          RAILS_ENV: production
 
       - name: Run RSpec
         run: SIMPLECOV=1 CODECOV=1 bundle exec rspec
