@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: d25720cab8e5b8316b8d3cbef6e45ae5af26a8dd
+  revision: 98b54937d64b41bb678786441b7d953752ccd4bf
   branch: custom-fields
   specs:
     decidim-decidim_awesome (0.7.2)
@@ -450,7 +450,7 @@ GEM
     docile (1.4.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
-    doorkeeper (5.5.3)
+    doorkeeper (5.5.4)
       railties (>= 5)
     doorkeeper-i18n (4.0.1)
     em-http-request (1.1.7)
