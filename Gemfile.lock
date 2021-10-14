@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: 98b54937d64b41bb678786441b7d953752ccd4bf
+  revision: 0903bd21debfece1de6d15495077d05172447701
   branch: custom-fields
   specs:
     decidim-decidim_awesome (0.7.2)
@@ -479,7 +479,7 @@ GEM
       rest-client (>= 1.6)
     eventmachine (1.2.7)
     eventmachine_httpserver (0.2.1)
-    excon (0.86.0)
+    excon (0.87.0)
     execjs (2.8.1)
     factory_bot (4.11.1)
       activesupport (>= 3.0.0)
@@ -531,7 +531,7 @@ GEM
       activesupport (>= 4.1, < 6.0)
       railties (>= 4.1, < 6.0)
       tzinfo (~> 1.2, >= 1.2.2)
-    geocoder (1.6.7)
+    geocoder (1.7.0)
     globalid (0.5.2)
       activesupport (>= 5.0)
     graphiql-rails (1.4.11)
@@ -619,7 +619,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2021.0901)
     mini_magick (4.11.0)
-    mini_mime (1.1.1)
+    mini_mime (1.1.2)
     mini_portile2 (2.5.3)
     minitest (5.14.4)
     mixlib-cli (2.1.8)
@@ -762,7 +762,7 @@ GEM
       virtus (~> 1.0.5)
       wisper (>= 1.6.1)
     redcarpet (3.5.1)
-    redis (4.4.0)
+    redis (4.5.0)
     regexp_parser (2.1.1)
     request_store (1.5.0)
       rack (>= 1.4)
