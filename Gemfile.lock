@@ -1,14 +1,4 @@
 GIT
-  remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: a5b632e095bb2588bed60353289d184c54c76928
-  branch: custom-fields
-  specs:
-    decidim-decidim_awesome (0.7.2)
-      decidim-admin (>= 0.23.0, < 0.25)
-      decidim-core (>= 0.23.0, < 0.25)
-      sassc (~> 2.3)
-
-GIT
   remote: https://github.com/Platoniq/decidim-module-navigation_maps
   revision: 1a214a01cae773ffc603e479c3a6714eed27a297
   specs:
@@ -416,6 +406,10 @@ GEM
     db-query-matchers (0.9.0)
       activesupport (>= 4.0, <= 6.0)
       rspec (~> 3.0)
+    decidim-decidim_awesome (0.7.2)
+      decidim-admin (>= 0.23.0, < 0.25)
+      decidim-core (>= 0.23.0, < 0.25)
+      sassc (~> 2.3)
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
     declarative-option (0.1.0)
@@ -954,7 +948,7 @@ DEPENDENCIES
   decidim!
   decidim-conferences!
   decidim-consultations!
-  decidim-decidim_awesome!
+  decidim-decidim_awesome (~> 0.7.2)
   decidim-dev!
   decidim-navigation_maps!
   decidim-notify!
