@@ -24,7 +24,6 @@ gem "bootsnap", "~> 1.4"
 gem "puma", ">= 4.3.5"
 gem "uglifier", "~> 4.1"
 
-gem "delayed_job_web"
 gem "faker", "~> 2.14"
 gem "sentry-raven"
 gem "whenever", require: false
@@ -50,8 +49,7 @@ group :development do
 end
 
 group :production do
-  gem "daemons", "~> 1.3"
-  gem "delayed_job_active_record", "~> 4.1"
   gem "figaro", "~> 1.2"
-  gem "passenger", "~> 6.0"
+  gem "sidekiq", "~> 6.0"
+  gem "sidekiq-cron"
 end
