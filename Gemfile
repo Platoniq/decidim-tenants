@@ -26,7 +26,8 @@ gem "uglifier", "~> 4.1"
 
 gem "faker", "~> 2.14"
 gem "sentry-raven"
-gem "whenever", require: false
+gem "sidekiq", "~> 6.0"
+gem "sidekiq-cron"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
@@ -50,6 +51,4 @@ end
 
 group :production do
   gem "figaro", "~> 1.2"
-  gem "sidekiq", "~> 6.0"
-  gem "sidekiq-cron"
 end
