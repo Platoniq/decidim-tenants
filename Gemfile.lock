@@ -382,7 +382,6 @@ GEM
     chef-utils (17.6.18)
       concurrent-ruby
     childprocess (3.0.0)
-    chronic (0.10.2)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     coffee-rails (5.0.0)
@@ -914,8 +913,6 @@ GEM
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    whenever (1.0.0)
-      chronic (>= 0.6.3)
     wicked_pdf (1.4.0)
       activesupport
     wisper (2.0.1)
@@ -956,7 +953,6 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0)
   uglifier (~> 4.1)
   web-console (~> 3.5)
-  whenever
 
 RUBY VERSION
    ruby 2.7.4p191
