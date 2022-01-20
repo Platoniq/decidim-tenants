@@ -32,6 +32,10 @@ $palette: (
   --warning-rgb: #{rgb-from-hex(map-get($palette, warning))};
   --alert: #{map-get($palette, alert)};
   --alert-rgb: #{rgb-from-hex(map-get($palette, alert))};
+  --link: #{map-get($palette, highlight)};
+  --link-rgb: #{rgb-from-hex(map-get($palette, highlight))};
+  --link-hover: #{map-get($palette, primary)};
+  --link-hover-rgb: #{rgb-from-hex(map-get($palette, primary))};
   --highlight: #{map-get($palette, highlight)};
   --highlight-rgb: #{rgb-from-hex(map-get($palette, highlight))};
   --twitter: #{map-get($palette, highlight)};
@@ -72,3 +76,18 @@ $gradient-palette-6: linear-gradient(
   var(--warning) 83.3333333335%,
   var(--warning) 100%
 );
+
+@mixin link {
+  color: var(--link);
+  &:hover,
+  &.hover,
+  &:focus,
+  &.focus {
+    color: var(--link-hover);
+  }
+}
+
+@mixin link-serious {
+  @include link;
+  color: var(--text);
+}

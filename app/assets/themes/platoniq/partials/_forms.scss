@@ -1,0 +1,6 @@
+@import "./variables";
+
+.register__separator::before {
+  height: $border-width-wide;
+  background-color: var(--primary);
+}

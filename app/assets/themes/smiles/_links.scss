@@ -1,5 +1,10 @@
 @import "./variables";
 
+a,
+.link {
+  @include link;
+}
+
 /* fix color variables */
 .cookie-warning a {
   color: var(--primary);

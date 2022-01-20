@@ -82,3 +82,8 @@ hr.reset {
 textarea {
   border-radius: $border-radius;
 }
+
+.reveal__header {
+  border-bottom-width: $border-width-wide;
+  border-bottom-color: var(--primary);
+}
