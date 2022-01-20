@@ -1,0 +1,121 @@
+@import "./variables";
+
+/* fix color variables */
+.cookie-warning a {
+  color: var(--primary);
+}
+.button.hollow.primary:hover,
+.button.hollow.primary:focus {
+  color: var(--primary);
+}
+.floating-helper__text {
+  color: var(--primary);
+}
+.floating-helper__icon {
+  background-color: var(--primary);
+}
+.global-accountability .row.column .card--accountability .card__content ul a,
+.global-accountability .row.columns .card--accountability .card__content ul a,
+.global-accountability .row.column .card--accountability .badge-card__content ul a,
+.global-accountability .row.columns .card--accountability .badge-card__content ul a {
+  color: var(--primary);
+}
+.topbar__dropmenu .is-dropdown-submenu li a {
+  color: var(--primary);
+}
+.svg-icon-path {
+  color: var(--primary) !important ;
+}
+html a {
+  color: var(--primary);
+}
+.card__link,
+.card__link:hover {
+  color: var(--primary);
+}
+.card__text a:hover {
+  color: $body-font-color;
+}
+.author-data .author__name {
+  color: var(--primary);
+}
+.process_stats .process_stats-item .icon {
+  color: var(--primary);
+}
+#profile-tabs.tabs .tabs-title a {
+  color: var(--primary);
+}
+.floating-helper__icon-big {
+  color: var(--primary);
+}
+
+.link,
+.link-alt {
+  color: var(--primary);
+
+  &:hover {
+    color: $body-font-color;
+  }
+}
+.side-panel__tabs .tabs-title.is-active > [role="tab"],
+.side-panel__tabs .tabs-title.is-active > a {
+  color: var(--primary);
+}
+.side-panel__tabs .tabs-title > [role="tab"]:hover,
+.side-panel__tabs .tabs-title > a:hover {
+  color: var(--primary);
+}
+.opinion-toggle--meh:hover {
+  background-color: var(--primary);
+}
+.opinion-toggle--meh:focus {
+  background-color: var(--primary);
+}
+.opinion-toggle--meh.is-active {
+  background-color: var(--primary);
+}
+.floating-helper__content-close {
+  background-color: var(--primary);
+}
+.button.primary {
+  background-color: var(--primary);
+}
+.floating-helper__content {
+  border-top: 5px solid var(--primary);
+}
+.pagination .current {
+  background: var(--primary);
+}
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  border-color: var(--primary) transparent transparent;
+}
+.dropdown.menu .is-active > a {
+  color: var(--primary);
+}
+
+.collapsible-list .collapsible-list__see-more {
+  color: var(--primary);
+}
+
+/* fix colors variables primary darker  */
+a:focus {
+  color: var(--primary);
+}
+a:hover {
+  color: var(--primary);
+}
+.author__name:hover {
+  color: var(--primary);
+}
+.author-data a:hover {
+  color: var(--primary);
+}
+.author-data button:hover {
+  color: var(--primary);
+}
+.button.primary:hover {
+  background-color: var(--primary);
+}
+.card--list__icon {
+  fill: var(--secondary);
+}

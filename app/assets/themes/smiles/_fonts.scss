@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Inter";
+  src: 
+    font-url("smiles/Inter-Regular.woff2") format("woff2"), 
+    font-url("smiles/Inter-Regular.woff") format("woff"),
+    font-url("smiles/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter Semi";
+  src: 
+    font-url("smiles/Inter-SemiBoldItalic.woff2") format("woff2"), 
+    font-url("smiles/Inter-SemiBoldItalic.woff") format("woff"),
+    font-url("smiles/Inter-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter Semi";
+  src: 
+    font-url("smiles/Inter-SemiBold.woff2") format("woff2"), 
+    font-url("smiles/Inter-SemiBold.woff") format("woff"),
+    font-url("smiles/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: 
+    font-url("smiles/Inter-MediumItalic.woff2") format("woff2"), 
+    font-url("smiles/Inter-MediumItalic.woff") format("woff"),
+    font-url("smiles/Inter-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: 
+    font-url("smiles/Inter-Medium.woff2") format("woff2"), 
+    font-url("smiles/Inter-Medium.woff") format("woff"),
+    font-url("smiles/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: 
+    font-url("smiles/Inter-Italic.woff2") format("woff2"), 
+    font-url("smiles/Inter-Italic.woff") format("woff"),
+    font-url("smiles/Inter-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Zilla Slab";
+  src: 
+    font-url("smiles/ZillaSlab-MediumItalic.woff2") format("woff2"),
+    font-url("smiles/ZillaSlab-MediumItalic.woff") format("woff"),
+    font-url("smiles/ZillaSlab-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Zilla Slab";
+  src: 
+    font-url("smiles/ZillaSlab-Medium.woff2") format("woff2"), 
+    font-url("smiles/ZillaSlab-Medium.woff") format("woff"),
+    font-url("smiles/ZillaSlab-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin font-heading() {
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  text-transform: none;
+}
+
+@mixin font-body() {
+  font-family: "Inter", sans-serif;
+}
+
+@mixin font-link() {
+  @include font-sans;
+  font-weight: bold;
+  text-transform: none;
+  text-decoration: underline;
+}
+
+@mixin font-button() {
+  @include font-heading;
+  font-weight: 500;
+  text-decoration: none;
+}

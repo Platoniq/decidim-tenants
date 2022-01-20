@@ -1,0 +1,51 @@
+@import "variables";
+
+.process-header__main {
+  clip-path: none;
+  height: 12em;
+
+  &::after {
+    content: none;
+  }
+}
+
+.process-header__inner {
+  display: block;
+}
+
+.process-header__phase {
+  display: none;
+}
+
+.process-nav {
+  background: $black;
+  box-shadow: none;
+  border-bottom: none;
+
+  &__link {
+    text-transform: none;
+    @include font-heading;
+  }
+
+  &__content li {
+    a {
+      font-weight: bold;
+      color: $white;
+    }
+  }
+  &__content li.is-active {
+    box-shadow: none;
+    a {
+      color: var(--primary);
+    }
+  }
+
+  &__hidden-content {
+    background: $black;
+
+    &__more {
+      border-radius: none;
+      border-bottom: none;
+    }
+  }
+}

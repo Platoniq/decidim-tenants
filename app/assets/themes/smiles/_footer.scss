@@ -1,0 +1,27 @@
+@import "variables";
+
+.eu-footer,
+.mini-footer,
+.main-footer {
+  background: $black;
+  color: $gray;
+
+  a {
+    color: $gray;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.mini-footer {
+  padding-top: 2em;
+}
+
+.eu-footer {
+  padding: 2em;
+  background: var(--primary);
+  color: $white;
+  font-weight: 500;
+}

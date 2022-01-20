@@ -1,0 +1,4 @@
+en:
+  eu_footer:
+    block_1: "This project has received funding from the European Union’s Erasmus+ programme under grant agreement: %{code}"
+    block_2: The European Commission’s support for this project does not constitute an endorsement of the contents, which reflect the views only of the partners, and the Commission cannot be held responsible for any use which may be made of the information contained therein.

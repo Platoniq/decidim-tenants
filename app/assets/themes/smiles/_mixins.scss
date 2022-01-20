@@ -1,0 +1,37 @@
+@mixin menu {
+  background-color: $white;
+  padding: ($unit * 1.2) 0;
+  box-shadow: none;
+}
+
+@mixin menu-item-li {
+}
+
+@mixin menu-item-a {
+  @include font-button;
+
+  color: $link-color;
+
+  &:hover {
+    color: $link-color;
+    @include font-button;
+  }
+}
+
+@mixin small-screen {
+  @media print, screen and (max-width: 40em) {
+    @content;
+  }
+}
+
+@mixin mid-screen {
+  @media print, screen and (min-width: 40em) and (max-width: 64em) {
+    @content;
+  }
+}
+
+@mixin big-screen {
+  @media print, screen and (min-width: 64em) {
+    @content;
+  }
+}

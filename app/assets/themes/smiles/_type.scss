@@ -1,0 +1,53 @@
+@import "variables";
+
+$h1-size: $unit * 3;
+
+h1,
+.h1 {
+  @include font-heading;
+  font-size: $h1-size;
+  line-height: 120%;
+  font-weight: 500;
+}
+
+h2,
+.h2 {
+  @include font-body;
+  font-size: $h1-size * 0.7;
+  line-height: 120%;
+  font-weight: 400;
+}
+h3,
+.h3 {
+  @include font-body;
+  font-size: $h1-size * 0.5;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+h4,
+.h4 {
+  @include font-body;
+  font-size: $h1-size * 0.35;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+h5,
+.h5,
+h6,
+.h6 {
+  @include font-body;
+}
+
+html,
+body {
+  @include font-body;
+}
+
+.section-heading {
+  @include font-body;
+  letter-spacing: unset;
+  text-transform: none;
+  font-size: $h1-size * 0.35;
+}
