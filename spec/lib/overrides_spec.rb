@@ -12,7 +12,14 @@ checksums = [
       # layouts
       "/app/views/layouts/decidim/_mini_footer.html.erb" => "55a9ca723b65b8d9eadb714818a89bb3"
     }
-  }, {
+  },
+  {
+    package: "decidim-blogs",
+    files: {
+      "/app/views/decidim/blogs/posts/_posts.html.erb" => "933daac39f2b55354d4c5eb4d898de2d"
+    }
+  },
+  {
     package: "decidim-participatory_processes",
     files: {
       "/app/controllers/decidim/participatory_processes/participatory_process_groups_controller.rb" => "1e564390ba85cc83aaef2a75b91c3b7f"
