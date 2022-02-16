@@ -37,8 +37,7 @@ public/uploads
 /config/application.yml
 
 # Ignore deploy secrets
-/config/deploy.rb
-/config/deploy/*
+/config/deploy*
 /Capfile
 .rbenv-vars
 .rspec-failures
