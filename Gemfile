@@ -55,3 +55,6 @@ group :production do
   gem "figaro", "~> 1.2"
   gem "passenger", "~> 6.0"
 end
+
+# bug in version 1.9
+gem "i18n", "~> 1.8.1"
