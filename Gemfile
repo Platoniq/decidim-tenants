@@ -12,22 +12,22 @@ gem "decidim-consultations", DECIDIM_VERSION
 # gem "decidim-initiatives", DECIDIM_VERSION
 gem "decidim-decidim_awesome", "~> 0.7.2"
 # gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome", branch: "custom-fields"
-gem "decidim-navigation_maps", git: "https://github.com/Platoniq/decidim-module-navigation_maps"
-gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify", branch: "main"
+gem "decidim-navigation_maps"
+gem "decidim-notify"
 gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.24"
 gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker", branch: "main"
 
 # gem "deface"
 
 gem "bootsnap", "~> 1.4"
+# bug in version 1.9
+gem "i18n", "~> 1.8.1"
 
 gem "puma", ">= 4.3.5"
 gem "uglifier", "~> 4.1"
 
-gem "delayed_job_web"
 gem "faker", "~> 2.14"
 gem "sentry-raven"
-gem "whenever", require: false
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
@@ -50,8 +50,9 @@ group :development do
 end
 
 group :production do
-  gem "daemons", "~> 1.3"
-  gem "delayed_job_active_record", "~> 4.1"
   gem "figaro", "~> 1.2"
   gem "passenger", "~> 6.0"
+
+  gem "sidekiq", "~> 6.0"
+  gem "sidekiq-cron"
 end
