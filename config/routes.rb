@@ -13,5 +13,7 @@ Rails.application.routes.draw do
   mount Decidim::Core::Engine => "/"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  get "/formacio", to: redirect { |_path_params, _req| "https://smiles.platoniq.net/processes/training/f/181/" }, constraints: { host: "smiles.platoniq.net" }
+  get "/formacio", to: redirect { |_path_params, _req| "https://smiles.platoniq.net/processes/training/f/181/?locale=ca" }, constraints: { host: "smiles.platoniq.net" }
+  get "/formacion", to: redirect { |_path_params, _req| "https://smiles.platoniq.net/processes/training/f/181/?locale=es" }, constraints: { host: "smiles.platoniq.net" }
+  get "/training", to: redirect { |_path_params, _req| "https://smiles.platoniq.net/processes/training/f/181/?locale=en" }, constraints: { host: "smiles.platoniq.net" }
 end

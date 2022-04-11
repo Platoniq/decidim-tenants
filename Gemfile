@@ -56,3 +56,6 @@ group :production do
   gem "sidekiq", "~> 6.0"
   gem "sidekiq-cron"
 end
+
+# bug in version 1.9
+gem "i18n", "~> 1.8.1"
