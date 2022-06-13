@@ -15,3 +15,4 @@
 //= require_tree .
 //= require decidim
 //= require smiles.platoniq.net
+//= require datepicker-locales/foundation-datepicker.nl-BE.js

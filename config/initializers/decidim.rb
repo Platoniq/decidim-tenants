@@ -6,7 +6,7 @@ Decidim.configure do |config|
 
   # Change these lines to set your preferred locales
   config.default_locale = :en
-  config.available_locales = [:en, :ca, :es, :nl, :lv, :el, :pt]
+  config.available_locales = [:en, :ca, :es, :nl, :lv, :el, :pt, 'nl-BE']
 
   # Geocoder configuration
   config.maps = {
