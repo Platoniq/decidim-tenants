@@ -20,8 +20,6 @@ gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-tim
 # gem "deface"
 
 gem "bootsnap", "~> 1.4"
-# bug in version 1.9
-gem "i18n", "~> 1.8.1"
 
 gem "puma", ">= 4.3.5"
 gem "uglifier", "~> 4.1"
