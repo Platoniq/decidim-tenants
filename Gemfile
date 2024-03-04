@@ -47,6 +47,8 @@ group :development do
   gem "capistrano-passenger", "~> 0.2.0"
   gem "capistrano-rails", "~> 1.5"
   gem "capistrano-rbenv", "~> 2.1"
+  gem "capistrano-rails-console", "~> 2.3"
+  gem "capistrano-sidekiq", "~> 2.3"
 end
 
 group :production do
