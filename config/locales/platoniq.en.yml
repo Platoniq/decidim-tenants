@@ -3,3 +3,6 @@ en:
     footer:
       logo: Platoniq - Creativity and Democracy
       text: Made with <3 by 
+  ajuntament:
+    footer:
+      powered_by: "The Catalan translation of this project has had the collaboration of:"
